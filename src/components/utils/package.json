@@ -1,0 +1,19 @@
+{
+  "name": "@cmc/utils",
+  "version": "0.1.2",
+  "description": "cmc-utils",
+  "main": "dist/utils.min.js",
+  "esnext": "esnext/index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}

@@ -1,0 +1,13 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-detailed-address {
+  [class^='cmc-detailed-address'] {
+    margin-bottom: $half;
+  }
+}
+
+.cmc-compact-address {
+  [class^='cmc-compact-address'] {
+    margin-bottom: $half;
+  }
+}

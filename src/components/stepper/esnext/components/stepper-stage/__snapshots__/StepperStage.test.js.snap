@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepperStage base tests should match default snapshot 1`] = `
+<Fragment>
+  <div
+    className="cmc-stepper-stage disabled"
+    key="step-1"
+    name="00000000-0000-0000-0000-000000000000"
+    onClick={[Function]}
+  >
+    <Element
+      key="step-1"
+      name="step-1"
+    >
+      <div
+        className="cmc-stepper-stage__content"
+      >
+        content
+      </div>
+    </Element>
+  </div>
+  <Waypoint
+    bottomOffset="0px"
+    fireOnRapidScroll={true}
+    horizontal={false}
+    onEnter={[Function]}
+    onLeave={[Function]}
+    onPositionChange={[Function]}
+    topOffset="0px"
+  />
+</Fragment>
+`;

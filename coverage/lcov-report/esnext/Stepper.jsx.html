@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for esnext/Stepper.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">esnext</a> Stepper.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>26/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>9/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>25/25</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">45x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+import uuidv4 from 'uuid/v4';
+import bem from '@argos/utils/esnext/bem';
+&nbsp;
+import isEmpty from '@cmc/utils/esnext/isEmpty';
+import StepperStage from './components/stepper-stage';
+import StepperSidebar from './components/stepper-sidebar';
+import StepperContent from './components/stepper-content';
+import './Stepper.scss';
+&nbsp;
+const cn = bem({ prefix: 'cmc-', block: 'stepper' });
+export default class Stepper extends PureComponent {
+  constructor(props) {
+    super(props);
+    /**
+     * "currentlyViewingStepIndex" - Manages what we're scrolling over to update NavBar
+     * "latestStepReachedIndex" - Allow us to draw upto the latest step we've reached step we've
+     *  reached even after we've navigated back
+     */
+    this.state = {
+      activeStepIndex: props.activeStepIndex,
+      currentlyViewingStepIndex: 0,
+      latestStepReachedIndex: 0,
+      parentScrollContainer: uuidv4(),
+      minimizeNav: false,
+      navOrientation: this.props.orientation,
+    };
+&nbsp;
+    this.handleClickPreviousStep = this.handleClickPreviousStep.bind(this);
+    this.handleWaypointEnter = this.handleWaypointEnter.bind(this);
+    this.handleNavToggle = this.handleNavToggle.bind(this);
+    this.handleNavOrientation = this.handleNavOrientation.bind(this);
+  }
+&nbsp;
+  static getDerivedStateFromProps(nextProps, prevState) {
+    const stateChanges = { activeStepIndex: nextProps.activeStepIndex };
+    if (nextProps.activeStepIndex !== prevState.activeStepIndex) {
+      // If we've clicked back / forward in our parent our NavBar should reflect that now
+      stateChanges.currentlyViewingStepIndex = nextProps.activeStepIndex;
+      if (nextProps.activeStepIndex &gt; prevState.activeStepIndex) {
+        /**
+         * If we've moved to a later step Set latestStepReachedIndex to new step,
+         * so if we navigate back in the future we'll still draw up to this
+         */
+        stateChanges.latestStepReachedIndex = nextProps.activeStepIndex;
+      }
+    }
+    return stateChanges;
+  }
+&nbsp;
+  /**
+   * provided an index update our internal state + parent state
+   * @param {number} desiredIndex - Define a step index to navigate to
+   */
+  handleClickPreviousStep({ desiredIndex }) {
+    // This is internal state used to correcty highlight &lt;NavItem/&gt; when scrolling
+    this.setState(() =&gt; ({
+      currentlyViewingStepIndex: desiredIndex,
+    }));
+&nbsp;
+    this.props.handleStep({ desiredIndex });
+  }
+&nbsp;
+  /**
+   * Maintain the correct step showing on the left when we scroll back / forward through steps
+   * @param {number} stepIndex - The step our &lt;NavBar/&gt; should be showing
+   */
+  handleWaypointEnter({ stepIndex }) {
+    this.setState({
+      currentlyViewingStepIndex: stepIndex,
+    });
+  }
+&nbsp;
+  handleNavToggle(toggler) {
+    this.setState({
+      minimizeNav: toggler,
+    });
+  }
+&nbsp;
+  handleNavOrientation(position) {
+    this.setState({
+      navOrientation: position,
+    });
+  }
+&nbsp;
+  render() {
+    const {
+      children,
+      activeStepIndex,
+      shouldNavBarUpdateOnScroll,
+      renderUpToLatestStageReached,
+      summaryStyle,
+      lastItemDoneOnReach,
+    } = this.props;
+    const {
+      currentlyViewingStepIndex,
+      latestStepReachedIndex,
+      parentScrollContainer,
+      minimizeNav,
+      navOrientation,
+    } = this.state;
+&nbsp;
+    // Check for isEmpty, because for any reason if any stage does not contain allowNavigation flag it should allow navigation.
+    const allowNavigation =
+      isEmpty(children[activeStepIndex].props.allowNavigation) || children[activeStepIndex].props.allowNavigation;
+&nbsp;
+    return (
+      &lt;div
+        style={{ height: this.props.height }}
+        className={cn(null, {
+          'nav-left': navOrientation === 'left-side',
+          'nav-right': navOrientation === 'right-side',
+          'nav-minimize': minimizeNav,
+        })}&gt;
+        &lt;div className={cn('nav-container')}&gt;
+          &lt;StepperSidebar
+            orientation={navOrientation}
+            minimizeNav={minimizeNav}
+            activeStepIndex={activeStepIndex}
+            currentlyViewingStepIndex={currentlyViewingStepIndex}
+            onClickPreviousStep={this.handleClickPreviousStep}
+            onNavToggle={this.handleNavToggle}
+            onOrientationToggle={this.handleNavOrientation}
+            summaryStyle={summaryStyle}
+            allowNavigation={allowNavigation}
+            lastItemDoneOnReach={lastItemDoneOnReach}&gt;
+            {/* Render each &lt;StepperStage/&gt; title / subtitle / summary  */}
+            {children}
+          &lt;/StepperSidebar&gt;
+        &lt;/div&gt;
+        &lt;div className={cn('content-container')} id={parentScrollContainer}&gt;
+          &lt;StepperContent
+            shouldNavBarUpdateOnScroll={shouldNavBarUpdateOnScroll}
+            latestStepReachedIndex={latestStepReachedIndex}
+            activeStepIndex={activeStepIndex}
+            onClickPreviousStep={this.handleClickPreviousStep}
+            onWaypointEnter={this.handleWaypointEnter}
+            renderUpToLatestStageReached={renderUpToLatestStageReached}&gt;
+            {/* Render each &lt;StepperStage/&gt; content + navigation  / subtitle / summary  */}
+            {React.Children.map(children, (child) =&gt;
+              React.cloneElement(child, {
+                parentScrollContainer: this.state.parentScrollContainer,
+                allowNavigation,
+              }),
+            )}
+          &lt;/StepperContent&gt;
+        &lt;/div&gt;
+        {/* Display stages button @ bottom of stepper */}
+        &lt;div className={cn('control-buttons-container')}&gt;{children[activeStepIndex].props.transitionButton}&lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+&nbsp;
+Stepper.propTypes = {
+  /**
+   * Location of the &lt;NavBar /&gt;
+   */
+  navOrientation: PropTypes.oneOf(['left-side', 'right-side']),
+  /**
+   * Set the current step ( Zero based index )
+   */
+  activeStepIndex: PropTypes.number.isRequired,
+  /**
+   * One or more `&lt;StepperStage/&gt;` components.
+   */
+  children: PropTypes.oneOfType([
+    PropTypes.shape({
+      type: PropTypes.oneOf([StepperStage]),
+    }),
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        type: PropTypes.oneOf([StepperStage]),
+      }),
+    ),
+  ]).isRequired,
+  /**
+   * Provide the ability to update activeStepIndex in the parent function to a certain index
+   */
+  handleStep: PropTypes.func.isRequired,
+  /**
+   * A set PX height can be provided if needed
+   */
+  height: PropTypes.string,
+  /**
+   * Determines whether we render a waypoint for each stage so we can update NavBar on scrolling over them
+   */
+  shouldNavBarUpdateOnScroll: PropTypes.bool,
+  /**
+   * Determines whether we should render just to activeIndex or latestStepReachedIndex
+   */
+  renderUpToLatestStageReached: PropTypes.bool, // TODO: migrate to common-react-components
+  /**
+   * When the summary should be rendered
+   */
+  summaryStyle: PropTypes.string,
+};
+&nbsp;
+Stepper.defaultProps = {
+  orientation: 'left-side',
+  height: '100%',
+  shouldNavBarUpdateOnScroll: true,
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Nov 11 2019 11:57:48 GMT+0000 (Greenwich Mean Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

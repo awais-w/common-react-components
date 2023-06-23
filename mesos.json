@@ -1,0 +1,32 @@
+{
+  "id": "common-react-components",
+  "cpus": 0.1,
+  "mem": 1024,
+  "container": {
+    "docker": {
+      "image": "docker.deveng.systems/argos-cmc/common-react-components"
+    }
+  },
+  "labels": {
+    "SERVICE_ZONE": "private"
+  },
+  "portDefinitions": [
+    {
+      "labels": {
+        "containerPort": "9001",
+        "loadbalancerPort": "80"
+      }
+    }
+  ],
+  "healthChecks": [
+    {
+      "portIndex": 0,
+      "protocol": "MESOS_HTTP",
+      "path": "/",
+      "gracePeriodSeconds": 180,
+      "intervalSeconds": 30,
+      "timeoutSeconds": 10,
+      "maxConsecutiveFailures": 2
+    }
+  ]
+}

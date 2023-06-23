@@ -1,0 +1,107 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-nav-item {
+  @include font-standard;
+  border-bottom: 1px solid $color-grey-mid;
+  padding: $double;
+  cursor: pointer;
+
+  &.locked {
+    cursor: not-allowed;
+  }
+
+  &--active {
+    background-color: $color-grey-light;
+  }
+  &__title {
+    @include font-bold;
+    text-transform: uppercase;
+    font-size: $font-size-large;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: $super-double;
+  }
+  &__subtitle {
+    padding-top: $base;
+    font-size: $font-size-medium;
+  }
+  &__summary {
+    padding-top: $base;
+  }
+  &__complete {
+    color: $color-green;
+    transform: scale(1.25);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  // Animation of "complete" icon
+  &__complete-enter {
+    opacity: 0.01;
+    transform: translateY(-100%) scale(0.75);
+  }
+  &__complete-enter-active {
+    opacity: 1;
+    transform: translateY(0%) scale(1.25);
+    transition: all 300ms ease-out;
+  }
+  &__complete-exit {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  &__complete-exit-active {
+    opacity: 0;
+    transform: scale(4);
+    transition: all 300ms ease-in;
+  }
+
+  .cmc-icon,
+  .cmc-icon-custom {
+    margin-right: $half;
+    transition: color 0.5s;
+  }
+}
+
+.cmc-stepper--nav-minimize {
+  .cmc-nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: $base 0;
+    &__title {
+      padding-right: 0;
+    }
+    .cmc-icon {
+      margin: 0;
+      font-size: $font-size-h1;
+      cursor: pointer;
+    }
+    .cmc-icon-custom {
+      margin: 0;
+      cursor: pointer;
+      &::before {
+        font-size: $font-size-h1;
+      }
+    }
+    &.locked {
+      cursor: pointer;
+    }
+    &__complete {
+      & + .cmc-icon,
+      & + .cmc-icon-custom {
+        color: $color-green;
+      }
+    }
+    &__summary {
+      @include font-condensed-extra-bold;
+      padding-top: $half;
+      width: 100%;
+      text-align: center;
+      font-size: $font-size-small;
+      line-height: 1;
+    }
+  }
+}

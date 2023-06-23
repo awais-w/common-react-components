@@ -1,0 +1,34 @@
+// USED FOR MIXINS/VARIBLES USED IN ALL PAGINATION MATRIX COMPONENTS
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+$headingBorderWidth: $small;
+$headingBorderRadius: 0;
+
+$cellBorderWidth: 0.5px;
+$cellBorderRadius: $half;
+
+$minCellHeight: $super-large;
+$minCellWidth: $super-large;
+
+@mixin verticalCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin headingSettings {
+  @include font-bold;
+}
+
+@mixin setupBorders($width, $radius, $color) {
+  border-width: $width;
+  border-radius: $radius;
+  border-color: $color;
+  border-style: solid;
+}
+
+@mixin disabled {
+  cursor: not-allowed;
+  background-color: $color-grey-mid;
+  color: $color-grey-mid;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@cmc/store-lookup",
+  "version": "1.4.11",
+  "description": "Store Lookup Component",
+  "main": "dist/table.min.js",
+  "esnext": "esnext/StoreLookup.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@argos/bolt": "^1.0.10",
+    "@argos/utils": "^2.1.0",
+    "@cmc/cha-button": "^0.8.10",
+    "@cmc/cha-notification": "^1.3.5",
+    "@cmc/loading": "^0.2.2",
+    "moment": "^2.24.0"
+  }
+}

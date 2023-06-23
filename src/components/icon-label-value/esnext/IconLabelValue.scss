@@ -1,0 +1,78 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-icon-label-value {
+  @include font-standard;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: $half;
+
+  .material-icons {
+    padding-right: $half;
+    user-select: none;
+  }
+
+  &--inline {
+    margin-right: $base;
+    display: inline-flex;
+
+    // double-click selection fix for inline-blocks
+    &::after {
+      content: '';
+      display: block;
+    }
+  }
+
+  &--no-icon {
+    &::before {
+      content: '';
+      height: $large;
+      margin-left: -$half;
+    }
+  }
+
+  &__label {
+    @include font-bold;
+  }
+
+  &__label,
+  &__value {
+    line-height: initial;
+  }
+
+  &__value-multi {
+    &--clickable {
+      cursor: pointer;
+      color: $color-blue-cobalt;
+      text-decoration: underline;
+
+      &:hover {
+        color: $primary-color-light;
+      }
+    }
+  }
+
+  &__label,
+  &__value {
+    &--amber,
+    &.amber {
+      color: $color-sainsburys;
+    }
+    &--blue,
+    &.blue {
+      color: $primary-color;
+    }
+    &--red,
+    &.red {
+      color: $color-rust;
+    }
+    &--green,
+    &.green {
+      color: $color-green;
+    }
+    &--grey,
+    &.grey {
+      color: $color-grey-dark;
+    }
+  }
+}

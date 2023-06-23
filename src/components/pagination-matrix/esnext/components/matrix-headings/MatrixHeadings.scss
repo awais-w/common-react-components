@@ -1,0 +1,19 @@
+@import '~@argos/bolt/src/scss/abstracts/variables';
+@import '../../Matrix.scss';
+
+.cmc-pagination-matrix__heading,
+.cmc-pagination-matrix__blank {
+  @include setupBorders($headingBorderWidth, $headingBorderRadius, $color-grey-light);
+  @include headingSettings;
+  @include verticalCenter;
+  @include font-standard;
+
+  min-width: $minCellWidth;
+  min-height: $minCellHeight;
+
+  text-transform: uppercase;
+
+  &.cmc-pagination-matrix__heading--active {
+    @include setupBorders($headingBorderWidth, $headingBorderRadius, $color-blue-cobalt);
+  }
+}

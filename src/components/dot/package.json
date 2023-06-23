@@ -1,0 +1,32 @@
+{
+  "name": "@cmc/dot",
+  "version": "0.2.2",
+  "description": "Dot",
+  "main": "dist/",
+  "esnext": "esnext/Dot.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui-components"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@argos/bolt": "^1.0.10",
+    "@argos/utils": "^1.2.3"
+  }
+}

@@ -1,0 +1,171 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+/*
+ *  NOTE: expanding the selector tree from .cmc-button to .cmc-button.button
+ *  so that the button class styling doesnt override the .cmc-button styling
+ */
+
+$darken-volume: 10%;
+
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.cmc-button {
+  padding: 0 $super-double;
+  &.button {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $input-height-regular;
+    position: relative;
+    border-radius: $half;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($primary-color, $darken-volume);
+      border-color: darken($primary-color, $darken-volume);
+    }
+    &--secondary {
+      background-color: $color-white;
+      border-color: $primary-color;
+      color: $primary-color;
+      &:hover,
+      &:focus {
+        background-color: $color-white;
+        border-color: darken($primary-color, $darken-volume);
+        color: darken($primary-color, $darken-volume);
+      }
+      .cmc-button__loading {
+        border-color: rgba($primary-color, 0.3);
+        border-top-color: $primary-color;
+      }
+      &.cmc-button__icon--splitLeft,
+      &.cmc-button__icon--splitRight {
+        .cmc-icon-label-value .cmc-icon {
+          border-color: $primary-color;
+          border-width: 2px;
+        }
+      }
+    }
+    .cmc-icon-label-value {
+      flex-wrap: nowrap;
+      &__label {
+        @include font-compressed-bold;
+        font-size: $font-size-large;
+        margin: 0;
+      }
+      .cmc-icon {
+        margin: 0;
+        align-self: center;
+      }
+    }
+  }
+
+  &__loading {
+    width: $large;
+    height: $large;
+    border: $half rgba($color-white, 0.25) solid;
+    border-top-color: rgba($color-white, 1);
+    border-radius: 50%;
+    animation: spCircRot 0.6s infinite linear;
+    margin: auto;
+    &--withLabel {
+      display: inline-block;
+      margin: 0 $base -$half 0;
+    }
+  }
+
+  &__icon {
+    .cmc-icon {
+      font-size: $font-size-large;
+    }
+    &--left {
+      .cmc-icon-label-value {
+        .cmc-icon + .cmc-icon-label-value__label {
+          margin-left: $base;
+        }
+      }
+    }
+    &--right {
+      .cmc-icon-label-value {
+        flex-direction: row-reverse;
+        .cmc-icon-label-value__label {
+          margin-right: $base;
+          margin-left: 0;
+        }
+      }
+    }
+    &--splitLeft,
+    &--splitRight {
+      .cmc-icon-label-value .cmc-icon {
+        position: absolute;
+        height: $input-height-regular;
+        display: flex;
+        align-items: center;
+        padding: 0 $base;
+      }
+    }
+    &--splitLeft {
+      .cmc-icon-label-value {
+        margin-left: $base * 5;
+        .cmc-icon {
+          left: 0;
+          border-right: 1px solid $color-white;
+        }
+      }
+    }
+    &--splitRight {
+      .cmc-icon-label-value {
+        margin-right: $base * 5;
+        .cmc-icon {
+          right: 0;
+          border-left: 1px solid $color-white;
+        }
+      }
+    }
+  }
+
+  &.button--contentFit {
+    padding-left: $double;
+    padding-right: $double;
+  }
+  &.button--containerFit {
+    width: 100%;
+    .cmc-icon-label-value {
+      display: inline-flex;
+    }
+  }
+  &.button--short {
+    height: $input-height-short;
+    padding-top: 0;
+    padding-bottom: 0;
+    .cmc-icon {
+      line-height: 120%;
+    }
+  }
+}
+
+@include touch-device-bp1024 {
+  .cmc-button.button {
+    &.button--short {
+      height: $input-height-regular;
+    }
+  }
+}
+
+@include tablet-and-up {
+  .cmc-button {
+    padding: 0 $super-large;
+  }
+  .button--half {
+    padding: 0 $super-double;
+  }
+}

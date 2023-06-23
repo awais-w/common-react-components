@@ -1,0 +1,107 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-input-selection {
+  position: relative;
+  display: block;
+
+  label {
+    @include font-standard;
+    color: $color-grey-charcoal;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    :focus {
+      outline: inherit;
+      outline-offset: $half;
+    }
+  }
+
+  .cmc-input-selection__text-container {
+    padding-left: $base;
+  }
+
+  input[type='checkbox'],
+  input[type='radio'] {
+    margin-right: $base;
+    opacity: 0;
+    position: absolute;
+    align-self: center;
+
+    & + label:before {
+      content: '';
+      @include prefix(transition, all 0.3s ease, webkit moz ms o);
+      font-family: 'Material Icons';
+      color: $color-white;
+      display: block;
+      width: $input-height-regular * 0.5;
+      height: $input-height-regular * 0.5;
+      background-color: $color-white;
+      border: 1px solid $color-grey-dark;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $small;
+      box-sizing: border-box;
+      @include touch-device-bp1024 {
+        width: $large;
+        height: $large;
+      }
+    }
+
+    &:active + label:before {
+      box-shadow: 0;
+    }
+
+    &:checked.cmc-input-selection__input--tick + label:before {
+      content: 'check';
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+
+    &:checked.cmc-input-selection__input--cross + label:before {
+      content: 'close';
+      background-color: $color-rust;
+      border-color: $color-rust;
+    }
+
+    &:checked.cmc-input-selection__input--line + label:before {
+      content: 'remove';
+      background-color: $color-sainsburys;
+      border-color: $color-sainsburys;
+    }
+
+    :focus + label:before {
+      border-color: $color-grey-dark;
+    }
+  }
+
+  input[type='radio'] {
+    & + label:before {
+      border-radius: 50%;
+      content: '';
+    }
+  }
+
+  input[type='radio']:checked {
+    & + label:before {
+      border: $half + 2 solid $primary-color;
+      @include touch-device-bp1024 {
+        border-width: $base;
+      }
+    }
+  }
+
+  input input:focus + label {
+    transition: none 0s ease 0s;
+  }
+
+  fieldset[disabled] label,
+  fieldset[disabled] input,
+  input.disabled,
+  input[disabled] {
+    cursor: not-allowed;
+  }
+}

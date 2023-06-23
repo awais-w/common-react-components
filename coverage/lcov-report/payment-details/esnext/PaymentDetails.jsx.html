@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for payment-details/esnext/PaymentDetails.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">payment-details/esnext</a> PaymentDetails.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">65.22% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">61.9% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>26/42</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">65.22% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>15/23</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import PropTypes from 'prop-types';
+import Skeleton from 'react-loading-skeleton';
+import bem from '@argos/utils/esnext/bem';
+import Pane from '@cmc/pane/esnext/pane';
+import IconLabelValue from '@cmc/icon-label-value/esnext/IconLabelValue';
+import Notification from '@cmc/cha-notification/esnext/Notification';
+import Table from '@cmc/table/esnext/Table';
+import isEmpty from '@cmc/utils/esnext/isEmpty';
+import Button from '@cmc/cha-button/esnext/Button';
+import formatMoney from '@cmc/utils/esnext/formatMoney';
+import { voucherHeadings, transactionHeadings } from './heading/PaymentDetailsHeading';
+import { generateVoucherData, generateTransactionData } from './helpers/PaymentDetailsFunctions';
+&nbsp;
+import PaymentStatus from './components/payment-status';
+import './PaymentDetails.scss';
+&nbsp;
+const cn = bem({ prefix: 'cmc-', block: 'payment-details' });
+&nbsp;
+const PaymentDetails = ({
+  colleagueDiscountCardNumber = '',
+  paymentVouchers = [],
+  totalAmount,
+  orderTransactions = <span class="branch-0 cbranch-no" title="branch not covered" >[],</span>
+  status,
+  canRetryPayment,
+  userHasRetryPermissions,
+  onRetryPayment,
+  retryPaymentStatus,
+  isLoading,
+}) =&gt; {
+  const voucherTableData = generateVoucherData(paymentVouchers);
+  const isVoucherData = voucherTableData.length &gt; 0;
+  const transactionTableData = generateTransactionData(orderTransactions);
+  const { amount, currency } = totalAmount || <span class="branch-1 cbranch-no" title="branch not covered" >{};</span>
+&nbsp;
+  const buildPaymentStatus = () =&gt; {
+    switch (retryPaymentStatus) {
+      case 'APPROVED':
+        return &lt;PaymentStatus type='success' description='PAYMENT SUCCESSFUL' /&gt;;
+<span class="branch-1 cbranch-no" title="branch not covered" >      case 'FAILURE':</span>
+<span class="cstat-no" title="statement not covered" >        return &lt;PaymentStatus type='failure' description='PAYMENT FAILURE' /&gt;;</span>
+<span class="branch-2 cbranch-no" title="branch not covered" >      case 'DECLINED':</span>
+<span class="cstat-no" title="statement not covered" >        return &lt;PaymentStatus type='failure' description='PAYMENT DECLINED' /&gt;;</span>
+<span class="branch-3 cbranch-no" title="branch not covered" >      case 'UNKNOWN':</span>
+<span class="branch-4 cbranch-no" title="branch not covered" >      case 'CANCELLED':</span>
+<span class="branch-5 cbranch-no" title="branch not covered" >      case 'PENDING':</span>
+<span class="cstat-no" title="statement not covered" >        return &lt;PaymentStatus type='other' description={retryPaymentStatus} /&gt;;</span>
+      default:
+        return &lt;PaymentStatus type={status.type} description={status.description} /&gt;;
+    }
+  };
+&nbsp;
+  const buildRetryNotification = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    switch (retryPaymentStatus) {</span>
+      case 'FAILURE':
+<span class="cstat-no" title="statement not covered" >        return &lt;Notification mode='error'&gt;An unexpected failure has occurred, please retry payment&lt;/Notification&gt;;</span>
+      case 'DECLINED':
+<span class="cstat-no" title="statement not covered" >        return &lt;Notification mode='error'&gt;The payment method has been declined&lt;/Notification&gt;;</span>
+      case 'CANCELLED':
+<span class="cstat-no" title="statement not covered" >        return &lt;Notification mode='warn'&gt;The payment method has been cancelled&lt;/Notification&gt;;</span>
+      default:
+<span class="cstat-no" title="statement not covered" >        return null;</span>
+    }
+  };
+&nbsp;
+  return (
+    &lt;div className={cn()}&gt;
+      &lt;Pane
+        title1={'Payment'}
+        title2={!isLoading &amp;&amp; `Total: ${formatMoney(amount, currency)}`}
+        icon='payment'
+        titleRight={!isLoading &amp;&amp; buildPaymentStatus()}&gt;
+        {canRetryPayment &amp;&amp; userHasRetryPermissions &amp;&amp; retryPaymentStatus !== 'APPROVED' &amp;&amp; (
+          &lt;div className={cn('failed-payment')}&gt;
+            {retryPaymentStatus &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >buildRetryNotification()}</span>
+            &lt;div className={cn('failed-payment-buttons')}&gt;
+              &lt;Button
+                isSecondary
+                isShort
+                buttonWidth='contentFit'
+                text='New Card Payment'
+                onClick={() =&gt; onRetryPayment(false)}
+              /&gt;
+&nbsp;
+              &lt;Button isShort buttonWidth='contentFit' text='Retry Payment' onClick={() =&gt; onRetryPayment(true)} /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        )}
+        &lt;div className={cn('discount-card')}&gt;
+          {isLoading ? (
+<span class="branch-0 cbranch-no" title="branch not covered" >            &lt;Skeleton /&gt;</span>
+          ) : (
+            &lt;IconLabelValue label='Discount card #:' value={colleagueDiscountCardNumber || 'N/A'} /&gt;
+          )}
+        &lt;/div&gt;
+        &lt;div className={cn('vouchers')}&gt;
+          {isLoading ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;Skeleton /&gt; </span>: &lt;IconLabelValue label='Vouchers:' value={isVoucherData ? undefined : 'N/A'} /&gt;}
+          {isVoucherData &amp;&amp; (
+            &lt;Table
+              className={cn('vouchers-data')}
+              headings={voucherHeadings}
+              striped
+              bordered
+              tableData={voucherTableData}
+            /&gt;
+          )}
+        &lt;/div&gt;
+        &lt;div className={cn('transactions')}&gt;
+          {isLoading ? (
+<span class="branch-0 cbranch-no" title="branch not covered" >            &lt;Skeleton /&gt;</span>
+          ) : (
+            &lt;IconLabelValue
+              label='Transactions:'
+              value={!isEmpty(transactionTableData) ? undefined : <span class="branch-1 cbranch-no" title="branch not covered" >'No transactions'}</span>
+            /&gt;
+          )}
+          {!isEmpty(transactionTableData) &amp;&amp; (
+            &lt;Table
+              className={cn('transactions-data')}
+              headings={transactionHeadings}
+              tableData={transactionTableData}
+              striped
+              bordered
+            /&gt;
+          )}
+        &lt;/div&gt;
+      &lt;/Pane&gt;
+    &lt;/div&gt;
+  );
+};
+&nbsp;
+PaymentDetails.propTypes = {
+  colleagueDiscountCardNumber: PropTypes.string,
+  paymentVouchers: PropTypes.arrayOf(
+    PropTypes.shape({
+      ean: PropTypes.string,
+      quantity: PropTypes.number,
+    }),
+  ),
+  isRefunded: PropTypes.bool,
+  totalAmount: PropTypes.shape({
+    amount: PropTypes.number,
+    currency: PropTypes.string,
+  }).isRequired,
+  orderTransactions: PropTypes.arrayOf(
+    PropTypes.shape({
+      total: PropTypes.shape({
+        amount: PropTypes.number,
+        currency: PropTypes.string,
+      }),
+      timestamp: PropTypes.any,
+      orderTransactionType: PropTypes.oneOf(['PAYMENT', 'REFUND']),
+    }),
+  ).isRequired,
+  status: PropTypes.string,
+  canRetryPayment: PropTypes.bool,
+  userHasRetryPermissions: PropTypes.bool,
+  onRetryPayment: PropTypes.func,
+  retryPaymentStatus: PropTypes.string,
+};
+export default PaymentDetails;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri May 29 2020 12:56:10 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

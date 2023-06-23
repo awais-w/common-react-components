@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip with props should match default snapshot 1`] = `
+<div
+  className="cmc-chip cmc-chip--red"
+>
+  <Icon
+    icon="icon-name"
+    isCustom={false}
+    onClick={null}
+  />
+  <span
+    className="cmc-chip__label"
+  >
+    Chip label
+  </span>
+</div>
+`;

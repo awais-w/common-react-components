@@ -1,0 +1,16 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-stores-table {
+  width: 100%;
+  &__row {
+    border: solid 1px $color-grey-mid;
+  }
+
+  &__row:nth-child(odd) {
+    background-color: $color-grey-light;
+  }
+
+  &__row:nth-child(even) {
+    background-color: $color-white;
+  }
+}

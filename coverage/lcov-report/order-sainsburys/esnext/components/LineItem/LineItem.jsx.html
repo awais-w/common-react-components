@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for order-sainsburys/esnext/components/LineItem/LineItem.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">order-sainsburys/esnext/components/LineItem</a> LineItem.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">96% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>24/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>19/19</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">95.83% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>23/24</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import bem from '@argos/utils/esnext/bem';
+import formatMoney from '@cmc/utils/esnext/formatMoney';
+import Card from '@cmc/card/esnext/card';
+import LineItemBody from './components/LineItemBody';
+&nbsp;
+import './line-item.scss';
+&nbsp;
+const cn = bem({ prefix: 'cmc-', block: 'line-item' });
+&nbsp;
+const LineItem = ({ data, isInitiallyExpanded = false }) =&gt; {
+  const {
+    pickedResult,
+    orderedLine: { sku, description, actualUnitPrice, regularUnitPrice, orderedQuantity, unitOfMeasure },
+    pickedLines,
+  } = data;
+&nbsp;
+  const [isPanelExpanded, setIsPanelExpanded] = useState(isInitiallyExpanded);
+  const isEverythingDelivered = pickedLines.every(
+    (pickedLine) =&gt; !pickedLine.returnReason &amp;&amp; !pickedLine.nonDelivered.length,
+  );
+  const isDifferentPrice = regularUnitPrice.amount !== actualUnitPrice.amount;
+  const isAnythingSubbed = pickedResult === 'SUBSTITUTION' || pickedResult === 'PART_SUBSTITUTION';
+  const isShortLife = pickedLines.some((x) =&gt; x.shortLife);
+  const pickedQuantity = pickedLines.reduce((acc, pickedLine) =&gt; {
+    acc += pickedLine.quantity;
+    return acc;
+  }, 0);
+  const looseItemUnit = unitOfMeasure.toUpperCase() !== 'EACH' ? ` ${unitOfMeasure.toUpperCase()}` : '';
+  const quantity = `${orderedQuantity}${looseItemUnit} ${
+    pickedQuantity !== orderedQuantity &amp;&amp; pickedResult !== 'PERFECT_PICK'
+      ? `(${pickedQuantity}${looseItemUnit} picked) `
+      : ''
+  }`;
+  const pricing = isDifferentPrice
+    ? `${formatMoney(regularUnitPrice.amount, regularUnitPrice.currency)}\u00A0\u00A0\u00A0`
+    : '';
+  const perUnit = `${formatMoney(actualUnitPrice.amount, actualUnitPrice.currency)} / ${unitOfMeasure.toUpperCase()}`;
+  const nonDeliveredItem = !isEverythingDelivered &amp;&amp; { icon: 'warning', tooltip: 'Return', color: 'red' };
+  const substitutionIcon = isAnythingSubbed &amp;&amp; { icon: 'swap_horiz', tooltip: 'Substitute', className: cn('sub-icon') };
+  const shortLifeIcon = isShortLife &amp;&amp; { icon: 'timer', tooltip: 'Short Life', className: cn('short-life-icon') };
+  const rightIcons = [nonDeliveredItem, substitutionIcon, shortLifeIcon];
+&nbsp;
+  return (
+    &lt;div className={cn()}&gt;
+      &lt;Card
+        isExpanded={isPanelExpanded}
+        onToggle={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >setIsPanelExpanded(!isPanelExpanded)}</span>
+        key={'contact'}
+        title1={sku}
+        title2={description}
+        title3={`${quantity}x ${pricing}Unit price: ${perUnit}`}
+        rightIcons={rightIcons}
+        expandedPanelType={'panel-info'}
+        collapsedPanelType={'panel-info'}
+        isNested
+        role={'none'}&gt;
+        &lt;LineItemBody data={data} /&gt;
+      &lt;/Card&gt;
+    &lt;/div&gt;
+  );
+};
+&nbsp;
+const itemPriceShape = PropTypes.shape({
+  amount: PropTypes.number.isRequired,
+  currency: PropTypes.string.isRequired,
+});
+&nbsp;
+LineItem.propTypes = {
+  data: PropTypes.shape({
+    status: PropTypes.string,
+    pickedResult: PropTypes.string,
+    orderedLine: PropTypes.shape({
+      actualUnitPrice: itemPriceShape.isRequired,
+      averageWeight: PropTypes.number.isRequired,
+      description: PropTypes.string.isRequired,
+      ean: PropTypes.string.isRequired,
+      nonPickable: PropTypes.bool.isRequired,
+      orderedQuantity: PropTypes.number.isRequired,
+      regularUnitPrice: itemPriceShape.isRequired,
+      sku: PropTypes.string.isRequired,
+      substituteProductAllowed: PropTypes.bool.isRequired,
+      unitOfMeasure: PropTypes.string.isRequired,
+      weightRange: PropTypes.string,
+    }).isRequired,
+    pickedLines: PropTypes.array,
+  }),
+  isInitiallyExpanded: PropTypes.bool,
+};
+&nbsp;
+export default LineItem;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri May 15 2020 10:38:04 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@import '~@argos/bolt/src/scss/abstracts/variables';
+
+.cmc-example {
+  @include font-standard;
+
+  h1 {
+    color: blue;
+  }
+
+  h2 {
+    color: red;
+  }
+
+  &__bold-text {
+    @include font-bold;
+  }
+}

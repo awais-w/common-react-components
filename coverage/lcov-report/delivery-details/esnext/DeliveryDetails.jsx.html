@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for delivery-details/esnext/DeliveryDetails.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">delivery-details/esnext</a> DeliveryDetails.jsx
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import Skeleton from 'react-loading-skeleton';
+import { bem } from '@argos/utils';
+import ContactDetails from '@cmc/contact-details/esnext';
+import Address from '@cmc/address/esnext';
+import isEmpty from '@cmc/utils/esnext/isEmpty';
+import DeliveryTracking from './components/delivery-tracking';
+import propTypes from './DeliveryDetails.propTypes';
+import './DeliveryDetails.scss';
+&nbsp;
+const cn = bem({ prefix: 'cmc-', block: 'delivery-details' });
+&nbsp;
+const DeliveryDetails = ({ contact = {}, address = {}, deliveryTracking = {}, isLoading, isClickAndCollect }) =&gt; {
+  const { person, business, telephones, emails } = contact;
+  const { actualArrival, plannedArrival, dropNumber, bookedSlot, price, origin, instructions } = deliveryTracking;
+&nbsp;
+  return (
+    &lt;div className={cn()}&gt;
+      {!isLoading ? (
+        &lt;React.Fragment&gt;
+          {!isEmpty(contact) &amp;&amp; (
+            &lt;div className={cn('contact-details')}&gt;
+              &lt;ContactDetails person={person} business={business} telephones={telephones} emails={emails} groupFields /&gt;
+              {Object.entries(address).length &amp;&amp; &lt;Address address={address} mode={'INLINE'} /&gt;}
+            &lt;/div&gt;
+          )}
+          &lt;div className={cn('delivery-tracking')}&gt;
+            &lt;DeliveryTracking
+              actualArrival={actualArrival}
+              plannedArrival={plannedArrival}
+              dropNumber={dropNumber}
+              bookedSlot={bookedSlot}
+              price={price}
+              origin={origin}
+              instructions={instructions || 'Not provided'}
+              isClickAndCollect={isClickAndCollect}
+            /&gt;
+          &lt;/div&gt;
+        &lt;/React.Fragment&gt;
+      ) : (
+        &lt;div className={cn('loading')}&gt;
+          &lt;Skeleton height={25} count={2} /&gt;
+        &lt;/div&gt;
+      )}
+    &lt;/div&gt;
+  );
+};
+&nbsp;
+DeliveryDetails.propTypes = propTypes;
+&nbsp;
+export default DeliveryDetails;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Apr 15 2021 10:26:14 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

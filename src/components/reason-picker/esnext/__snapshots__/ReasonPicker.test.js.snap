@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReasonPicker /> should match default snapshot 1`] = `
+<div
+  className="cmc-reason-picker"
+>
+  <ul>
+    <li
+      className="cmc-reason-picker__line"
+      key="1a"
+    >
+      <InputSelection
+        checkboxIconType="tick"
+        checked={false}
+        id="input-00000000-0000-0000-0000-000000000000"
+        inputType="radio"
+        name="radio-selection-00000000-0000-0000-0000-000000000000"
+        onChange={[Function]}
+        value="1a"
+      >
+        <span
+          key="1a-0"
+        >
+          <strong>
+            Order:
+          </strong>
+          1234
+        </span>
+        <span
+          key="1a-1"
+        >
+          <strong>
+            Description:
+          </strong>
+          A very bad thing
+        </span>
+      </InputSelection>
+    </li>
+    <li
+      className="cmc-reason-picker__line"
+      key="2a"
+    >
+      <InputSelection
+        checkboxIconType="tick"
+        checked={true}
+        id="input-00000000-0000-0000-0000-000000000000"
+        inputType="radio"
+        name="radio-selection-00000000-0000-0000-0000-000000000000"
+        onChange={[Function]}
+        value="2a"
+      >
+        <span
+          key="2a-0"
+        >
+          <strong>
+            Order:
+          </strong>
+          23456
+        </span>
+        <span
+          key="2a-1"
+        >
+          <strong>
+            Description:
+          </strong>
+          A very nice thing
+        </span>
+      </InputSelection>
+      <select
+        className="form-control"
+        defaultValue="r1a"
+        onChange={[Function]}
+      >
+        <option
+          key="option-0"
+          value="0"
+        >
+          Please select
+        </option>
+        <option
+          key="option-r1a"
+          value="r1a"
+        >
+          I just don't want it
+        </option>
+        <option
+          key="option-r2a"
+          value="r2a"
+        >
+          I already have one
+        </option>
+        <option
+          key="option-r3a"
+          value="r3a"
+        >
+          It is not what I expected
+        </option>
+      </select>
+    </li>
+    <li
+      className="cmc-reason-picker__line"
+      key="3a"
+    >
+      <InputSelection
+        checkboxIconType="tick"
+        checked={false}
+        id="input-00000000-0000-0000-0000-000000000000"
+        inputType="radio"
+        name="radio-selection-00000000-0000-0000-0000-000000000000"
+        onChange={[Function]}
+        value="3a"
+      >
+        <span
+          key="3a-0"
+        >
+          <strong>
+            Order:
+          </strong>
+          34567
+        </span>
+        <span
+          key="3a-1"
+        >
+          <strong>
+            Description:
+          </strong>
+          It is ok I guess
+        </span>
+      </InputSelection>
+    </li>
+  </ul>
+</div>
+`;

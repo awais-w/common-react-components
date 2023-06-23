@@ -1,0 +1,49 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-notification {
+  width: 100%;
+  padding: $base;
+  display: flex;
+  align-items: center;
+  border-radius: $border-radius-base;
+  @include font-standard;
+
+  &--info {
+    border: 1px solid $primary-color;
+    background-color: $color-alert-blue;
+  }
+
+  &--warning {
+    border: 1px solid $color-sainsburys;
+    background-color: $color-alert-orange;
+  }
+
+  &--error {
+    border: 1px solid $color-rust;
+    background-color: $color-alert-red;
+  }
+
+  &__message {
+    margin-left: $base;
+    font-size: $font-size-base;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  span ~ button {
+    display: block;
+    margin: $base auto 0 auto;
+  }
+
+  &.icon-alignment-top {
+    i {
+      place-self: start;
+    }
+  }
+
+  &.icon-alignment-middle {
+    i {
+      place-self: center;
+    }
+  }
+}

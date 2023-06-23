@@ -1,0 +1,15 @@
+ESSENTIAL
+- Use similar structure to BOLT where each component has a package.json
+  - uses peerDependencies
+  - Create a build script
+  - Create publish script
+  - Add git hooks for linting / testing etc on build / publish
+- Import the BOLT framework so we can use their global colors / buttons ETC
+- mixins.scss for our own internal stuff ( would imagine it's covered in bolt )?
+- ADD MATERIAL ICON PROPERLY
+
+NICE TO HAVE
+- Working knob support
+- Support importing SCSS files directly from the component in CHA
+- set of primitive component ( title, buttons, headers etc - should be bootstrap? )
+- Redux support

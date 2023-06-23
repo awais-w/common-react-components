@@ -1,0 +1,28 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-textarea {
+  margin-bottom: -$half;
+  &__label {
+    letter-spacing: 0.04em;
+    color: darken($color-grey-dark, 10%);
+    margin-bottom: $small;
+  }
+  &--resize-horizontal {
+    resize: horizontal;
+  }
+  &--resize-vertical {
+    resize: vertical;
+  }
+  &--resize-none {
+    resize: none;
+  }
+  &.has-error {
+    .cmc-textarea {
+      border-color: $color-rust;
+      &__help-block {
+        color: $color-rust;
+        margin-top: $small;
+      }
+    }
+  }
+}

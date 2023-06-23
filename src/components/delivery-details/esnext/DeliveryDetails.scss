@@ -1,0 +1,37 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+@mixin deliveryDetails-structure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  grid-gap: $base;
+}
+
+.cmc-delivery-details {
+  @include deliveryDetails-structure;
+  .cmc-icon {
+    font-size: $font-size-h4;
+  }
+  &__contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: $base;
+    height: fit-content;
+    & > div {
+      display: flex;
+    }
+    .cmc-icon-label-value {
+      color: $primary-color;
+    }
+  }
+  &__loading > span {
+    @include deliveryDetails-structure;
+  }
+  .cmc-inline-address {
+    .cmc-icon-label-value {
+      flex-wrap: nowrap;
+    }
+  }
+}

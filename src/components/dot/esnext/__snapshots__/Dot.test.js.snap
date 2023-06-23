@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dot should match default snapshot 1`] = `
+<div
+  className="cmc-dot cmc-dot--black"
+>
+  <span />
+</div>
+`;

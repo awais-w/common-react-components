@@ -1,0 +1,77 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+@mixin applyColor($color) {
+  $darken-amount: 10%;
+  border-color: $color;
+  .cmc-icon,
+  .cmc-icon-custom {
+    background: $color;
+  }
+  .cmc-chip__label {
+    color: $color;
+  }
+  &:hover {
+    border-color: darken($color, $darken-amount);
+    .cmc-icon,
+    .cmc-icon-custom {
+      background: darken($color, $darken-amount);
+    }
+    .cmc-chip__label {
+      color: darken($color, $darken-amount);
+    }
+  }
+}
+
+.cmc-chip {
+  display: inline-flex;
+  align-items: center;
+  height: $large;
+  border: 1px solid;
+  border-radius: $medium;
+  cursor: pointer;
+
+  .material-icons {
+    // padding-right: $half;
+    user-select: none;
+  }
+
+  .cmc-icon,
+  .cmc-icon-custom {
+    @include flexbox;
+    height: $large;
+    width: $large;
+    border-radius: $medium;
+    color: $color-white;
+    font-size: 18px;
+    margin-left: -1px;
+  }
+
+  .cmc-icon-custom::before {
+    font-size: $font-size-small;
+  }
+
+  &__label {
+    @include font-bold;
+    font-size: $font-size-small;
+    margin: 0 $base 0 $half;
+  }
+
+  &--black {
+    @include applyColor($color-grey-charcoal);
+  }
+  &--blue {
+    @include applyColor($color-cerulean);
+  }
+  &--red {
+    @include applyColor($color-rust);
+  }
+  &--green {
+    @include applyColor($color-green);
+  }
+  &--amber {
+    @include applyColor($color-sainsburys);
+  }
+  &--grey {
+    @include applyColor($color-grey-dark);
+  }
+}

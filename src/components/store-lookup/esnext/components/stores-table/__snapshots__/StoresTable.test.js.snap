@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoresTable matches the snapshot 1`] = `
+<table
+  className="cmc-stores-table"
+>
+  <tr
+    className="cmc-stores-table__row"
+  >
+    <StoreDetails
+      id="123"
+    />
+  </tr>
+  <tr
+    className="cmc-stores-table__row"
+  >
+    <StoreDetails
+      id="234"
+    />
+  </tr>
+</table>
+`;

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pane /> with default props should match default snapshot 1`] = `
+<section
+  className="ac-pane ac-pane--wrapper"
+>
+  <div
+    className="ac-pane__header"
+    onClick={[Function]}
+  >
+    <div
+      className="ac-pane__header-wrapper"
+    >
+      <Icon
+        icon="local_shipping"
+        isCustom={false}
+        onClick={null}
+      />
+      <h3
+        className="ac-pane__title h3"
+      >
+        <span
+          className="ac-pane__title1 title-item"
+        >
+          Title 1
+        </span>
+        <span
+          className="ac-pane__title2 title-item"
+        >
+          Title 2
+        </span>
+        <span
+          className="ac-pane__title3 title-item"
+        >
+          Title 3
+        </span>
+        <span
+          className="ac-pane__title4 title-item"
+        >
+          Title 4
+        </span>
+      </h3>
+    </div>
+  </div>
+  <div
+    className="ac-pane__body ac-pane__body--false ac-pane__body--false"
+    onClick={null}
+  />
+</section>
+`;

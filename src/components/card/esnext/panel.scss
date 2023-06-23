@@ -1,0 +1,100 @@
+//** this style is included here to inherit bolt panel styling
+
+@import '~@argos/bolt/src/scss/abstracts/variables';
+
+.ac-panel {
+  @include font-standard;
+
+  border-radius: 3px;
+  border: 1px solid $color-grey-mid;
+  background-color: $color-grey-light;
+  margin-bottom: 3px;
+
+  /* Fixes the ::after for IE11 and Safari 9 */
+  &__header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__header {
+    display: block;
+    position: relative;
+    border-bottom: 1px solid $color-grey-mid;
+    padding: 15px 25px 15px 15px;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &::before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid $color-grey-mid;
+    }
+
+    &::after {
+      display: inline-block;
+      margin-left: 2px;
+      content: '';
+      position: absolute;
+      bottom: -18px;
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      border-top: 18px solid #f5f5f5;
+    }
+
+    &--active {
+      background-color: $color-blue-cobalt;
+      color: $color-white;
+
+      &::after {
+        border-top-color: $color-blue-cobalt;
+      }
+    }
+
+    &--inactive {
+      color: $color-grey-dark;
+
+      .ac-panel__icon {
+        color: $color-grey-mid;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    line-height: 38px;
+    flex: 1 1 0;
+    color: inherit;
+  }
+
+  &__body {
+    background-color: $color-white;
+    border-radius: 0 0 3px 3px;
+    padding: 25px;
+  }
+
+  &__icon {
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    margin: 0 10px 0 2px;
+    font-size: 16pt;
+    fill: currentColor;
+
+    &--completed {
+      color: $color-green;
+    }
+
+    &--failed {
+      color: $color-rust;
+    }
+  }
+}

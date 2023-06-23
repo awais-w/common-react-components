@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle with default props should match default snapshot 1`] = `
+<div
+  className="cmc-toggle"
+  id="00000000-0000-0000-0000-000000000000"
+>
+  <div
+    className="buttons nullactive "
+  >
+    <button
+      className="toggle__button true"
+      onClick={[Function]}
+      value={true}
+    >
+      yes
+    </button>
+    <button
+      className="toggle__button false"
+      onClick={[Function]}
+      value={false}
+    >
+      no
+    </button>
+  </div>
+</div>
+`;

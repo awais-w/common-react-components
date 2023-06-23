@@ -1,0 +1,35 @@
+{
+  "name": "@cmc/modal",
+  "version": "0.6.12",
+  "description": "A generic modal component",
+  "main": "dist/",
+  "esnext": "esnext/index.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui-components"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@argos/utils": "^2.1.0",
+    "@cmc/cha-button": "^0.8.10",
+    "@cmc/icon": "^0.4.5",
+    "@cmc/loading": "^0.2.2",
+    "@cmc/portal": "^1.2.2"
+  }
+}

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavItem should match default snapshot 1`] = `
+<Fragment>
+  <NavItem
+    icon=""
+    isActive={true}
+    isComplete={true}
+    key=".0"
+    onClick={[MockFunction]}
+    shortSummary=""
+    subTitle=""
+    summary=""
+    summaryStyle="after-completion"
+    title=""
+  />
+  <NavItem
+    icon=""
+    isActive={false}
+    isComplete={true}
+    key=".1"
+    onClick={[MockFunction]}
+    shortSummary=""
+    subTitle=""
+    summary=""
+    summaryStyle="after-completion"
+    title=""
+  />
+  <NavItem
+    icon=""
+    isActive={false}
+    isComplete={true}
+    key=".2"
+    onClick={[MockFunction]}
+    shortSummary=""
+    subTitle=""
+    summary=""
+    summaryStyle="after-completion"
+    title=""
+  />
+</Fragment>
+`;

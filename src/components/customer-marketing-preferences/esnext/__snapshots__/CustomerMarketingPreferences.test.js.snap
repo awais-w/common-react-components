@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomerMarketingPreferences with default props should match default snapshot 1`] = `
+<div
+  className="cmc-customer-marketing-preferences container"
+>
+  <p
+    className="cmc-customer-marketing-preferences__message"
+  >
+    When you opt in, we will send you information on promotions and special offers. This could be through, post, by email, text message or push notifications on our apps. Make sure you don't miss out.
+  </p>
+  <article>
+    <ul
+      className="cmc-customer-marketing-preferences__item-container"
+    >
+      <li
+        className="cmc-customer-marketing-preferences__item"
+        key="AFSEmail"
+      >
+        <Toggle
+          no="NO"
+          onSelect={[Function]}
+          selected={true}
+          text="AFS - Email"
+          yes="YES"
+        />
+      </li>
+    </ul>
+  </article>
+</div>
+`;

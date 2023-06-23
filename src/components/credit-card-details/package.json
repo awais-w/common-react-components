@@ -1,0 +1,35 @@
+{
+  "name": "@cmc/credit-card-details",
+  "version": "1.2.3",
+  "description": "Credit card details for new dashboard",
+  "main": "dist/customer-marketing-preferences.min.js",
+  "esnext": "esnext/CustomerMarketingPreferences.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@argos/bolt": "^1.0.10",
+    "@argos/utils": "^2.1.0",
+    "@cmc/material-icon-with-text": "^0.3.2",
+    "@cmc/utils": "^0.1.2",
+    "moment": "^2.24.0"
+  }
+}

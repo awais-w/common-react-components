@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal base tests should match default snapshot 1`] = `
+<Portal
+  nodeSelector="body"
+>
+  <div
+    className="cmc-modal"
+  >
+    <div
+      className="cmc-modal__container"
+      style={
+        Object {
+          "height": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "width": undefined,
+        }
+      }
+    >
+      <div
+        className="cmc-modal__container-header"
+      >
+        <Icon
+          icon="close"
+          id="close"
+          isCustom={false}
+          onClick={[MockFunction]}
+        />
+        <h1>
+          Modal title
+        </h1>
+      </div>
+      <div
+        className="cmc-modal__container-content"
+      >
+        Modal content
+      </div>
+      <div
+        className="cmc-modal__container-footer"
+      >
+        <div
+          className="cmc-modal__container-footer-button"
+        >
+          <Button
+            buttonWidth="half"
+            icon=""
+            iconMode="left"
+            isDisabled={false}
+            isLoading={false}
+            isSecondary={true}
+            isShort={true}
+            loadingText=""
+            onClick={[MockFunction]}
+            text="secondary"
+            type="button"
+          />
+        </div>
+        <div
+          className="cmc-modal__container-footer-button"
+        >
+          <Button
+            buttonWidth="half"
+            icon=""
+            iconMode="left"
+            isDisabled={false}
+            isLoading={false}
+            isSecondary={false}
+            isShort={true}
+            loadingText=""
+            onClick={[MockFunction]}
+            text="primary"
+            type="button"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="cmc-modal__outside"
+    />
+  </div>
+</Portal>
+`;

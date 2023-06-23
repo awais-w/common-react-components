@@ -1,0 +1,47 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-customer-marketing-preferences {
+  @include font-standard;
+  width: 100%;
+  padding: 0;
+
+  &__message {
+    @include font-standard;
+    margin-bottom: $base;
+  }
+
+  &__item-container {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $base;
+    padding-bottom: $base;
+    border-bottom: $small solid $color-grey-dark;
+  }
+
+  &__item-label {
+    @include font-bold;
+  }
+
+  .cmc-CallToActionButtonCP__button {
+    padding: $base;
+  }
+}
+
+@include touch-device-bp1024 {
+  .cmc-customer-marketing-preferences {
+    &__message {
+      @include font-standard;
+      margin-bottom: $medium;
+    }
+    &__item {
+      padding-bottom: $medium;
+      padding-top: $half;
+    }
+  }
+}

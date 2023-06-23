@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for order-sainsburys/esnext/helpers/OrderSainsburysFunctions.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">order-sainsburys/esnext/helpers</a> OrderSainsburysFunctions.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">86.36% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>38/44</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>20/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">86.36% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>38/44</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _ from 'lodash';
+import isEmpty from '@cmc/utils/esnext/isEmpty';
+&nbsp;
+/**
+ * Sorts the line items into desired priority order
+ * Desired order:
+ *    1. Highest number of unique issues
+ *    2. Returned
+ *    3. Substituted
+ *    4. Short Life
+ *    5. Perfect picked
+ * @param {Array} lineItemsArr - the array to sort
+ * @returns {Array} the sorted list
+ */
+export const sortLineItems = (lineItemsArr) =&gt; {
+  const lineItems = _.cloneDeep(lineItemsArr);
+&nbsp;
+  return lineItems.sort((aa, bb) =&gt; {
+    // Possible unique issues:
+    // nonPerfectPick (Substituted)
+    // nonDelivered (Returned/Rejected)
+    // shortLife
+&nbsp;
+    const isNotPerfectPickA = aa.pickedResult !== 'PERFECT_PICK';
+    const isNotPerfectPickB = bb.pickedResult !== 'PERFECT_PICK';
+&nbsp;
+    let nonDeliveredItemsNumA = 0;
+    let nonDeliveredItemsNumB = 0;
+    let shortLifeItemsNumA = 0;
+    let shortLifeItemsNumB = 0;
+&nbsp;
+    aa.pickedLines.forEach((pickedLine) =&gt; {
+      if (pickedLine.returnReason || !isEmpty(pickedLine.nonDelivered)) {
+        nonDeliveredItemsNumA += 1;
+      }
+&nbsp;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (pickedLine.shortLife) {
+<span class="cstat-no" title="statement not covered" >        shortLifeItemsNumA += 1;</span>
+      }
+    });
+&nbsp;
+    bb.pickedLines.forEach((pickedLine) =&gt; {
+      if (pickedLine.returnReason || !isEmpty(pickedLine.nonDelivered)) {
+        nonDeliveredItemsNumB += 1;
+      }
+&nbsp;
+      if (pickedLine.shortLife) {
+        shortLifeItemsNumB += 1;
+      }
+    });
+&nbsp;
+    // Sort by number of unique issues first
+    const numUniqueIssuesA = isNotPerfectPickA + !!nonDeliveredItemsNumA + !!shortLifeItemsNumA;
+    const numUniqueIssuesB = isNotPerfectPickB + !!nonDeliveredItemsNumB + !!shortLifeItemsNumB;
+    if (numUniqueIssuesA !== numUniqueIssuesB) {
+      // -1 a goes first
+      // 0 don't sort
+      // 1 b goes first
+      return numUniqueIssuesB - numUniqueIssuesA;
+    }
+&nbsp;
+    // If tied, sort by returns
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (nonDeliveredItemsNumA || nonDeliveredItemsNumB) {
+      return nonDeliveredItemsNumB - nonDeliveredItemsNumA;
+    }
+&nbsp;
+    // Then sort by substitutes
+<span class="cstat-no" title="statement not covered" >    if (isNotPerfectPickA || isNotPerfectPickB) {</span>
+<span class="cstat-no" title="statement not covered" >      return isNotPerfectPickB - isNotPerfectPickA;</span>
+    }
+&nbsp;
+    // Then sort by shortlife
+<span class="cstat-no" title="statement not covered" >    if (shortLifeItemsNumA || shortLifeItemsNumB) {</span>
+<span class="cstat-no" title="statement not covered" >      return shortLifeItemsNumB - shortLifeItemsNumA;</span>
+    }
+&nbsp;
+    // If none, don't sort
+<span class="cstat-no" title="statement not covered" >    return 0;</span>
+  });
+};
+&nbsp;
+export const sortPickedLines = (pickedLinesArr) =&gt; {
+  const pickedLines = _.cloneDeep(pickedLinesArr);
+&nbsp;
+  return pickedLines.sort((aa, bb) =&gt; {
+    // Sort by return status
+    const isNonDeliveredItemA = Boolean(aa.returnReason);
+    const isNonDeliveredItemB = Boolean(bb.returnReason);
+    if (isNonDeliveredItemA || isNonDeliveredItemB) {
+      // -1 a goes first
+      // 0 neither goes first
+      // 1 b goes first
+      return isNonDeliveredItemB - isNonDeliveredItemA;
+    }
+&nbsp;
+    // If none, don't sort
+    return 0;
+  });
+};
+&nbsp;
+export const sortOrderAndPickedLines = (lineItemsArr) =&gt; {
+  let lineItems = _.cloneDeep(lineItemsArr);
+&nbsp;
+  lineItems = sortLineItems(lineItems);
+  lineItems.forEach((lineItem) =&gt; {
+    lineItem.pickedLines = sortPickedLines(lineItem.pickedLines);
+  });
+&nbsp;
+  return lineItems;
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 07 2019 10:51:04 GMT+0000 (Greenwich Mean Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

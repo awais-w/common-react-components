@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for pagination-matrix/esnext/components/matrix-cell/MatrixCell.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">pagination-matrix/esnext/components/matrix-cell</a> MatrixCell.jsx
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import PropTypes from 'prop-types';
+import bem from '@argos/utils/esnext/bem';
+import './MatrixCell.scss';
+import Icon from '@cmc/icon/esnext/Icon';
+&nbsp;
+/**
+ * This component displays a simple loading animation
+ *
+ * @param cell the data in the cell
+ * @param columnIndex the column index
+ * @param rowIndex the row index
+ * @param cellWidth the width of a cell as a percentage
+ * @param onClick the method to be called when a cell is clicked
+ * @param isActive boolean flagging if the cell is the active cell
+ */
+&nbsp;
+const cn = bem({ prefix: 'cmc-', block: 'pagination-matrix' });
+&nbsp;
+const cellTypes = ['disabled', 'red', 'blue', 'original', '', undefined];
+&nbsp;
+const MatrixCell = ({ cell, columnIndex, rowIndex, cellWidth, onClick, isActive }) =&gt; {
+  let value = cell.value || (<span class="branch-1 cbranch-no" title="branch not covered" >isActive </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >&lt;Icon icon='done' /&gt;)</span> || (<span class="branch-3 cbranch-no" title="branch not covered" >cell.type === 'original' </span>&amp;&amp; <span class="branch-4 cbranch-no" title="branch not covered" >&lt;Icon icon='remove' /&gt;)</span>;
+  value = cell.type === 'disabled' ? &lt;Icon icon='block' color='white' /&gt; : value;
+&nbsp;
+  return (
+    &lt;div
+      className={`${cn('cell', isActive ? 'active' : cell.type)}`}
+      style={{ width: `${cellWidth}%` }}
+      onClick={cell.type !== 'disabled' &amp;&amp; cell.type !== 'original' ? () =&gt; onClick(columnIndex, rowIndex) : undefined}
+      key={`row-${rowIndex}-column-${columnIndex}`}&gt;
+      {value}
+    &lt;/div&gt;
+  );
+};
+&nbsp;
+MatrixCell.propTypes = {
+  cell: PropTypes.shape({
+    value: PropTypes.string,
+    type: PropTypes.oneOf(cellTypes),
+  }),
+  columnIndex: PropTypes.number,
+  rowIndex: PropTypes.number,
+  cellWidth: PropTypes.number,
+  onClick: PropTypes.func,
+  isActive: PropTypes.bool,
+};
+&nbsp;
+export default MatrixCell;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Apr 15 2021 10:26:14 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

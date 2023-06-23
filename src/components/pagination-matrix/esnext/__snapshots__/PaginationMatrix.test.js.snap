@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PaginationMatrix /> with props set from default props should match default snapshot 1`] = `
+<div
+  className="cmc-pagination-matrix__matrix-grid"
+>
+  <div
+    className="cmc-pagination-matrix__table"
+  >
+    <MatrixHeadings
+      activeSetting={
+        Object {
+          "columnId": 1,
+          "rowId": 1,
+        }
+      }
+      cellWidth={16.666666666666668}
+      columnOffset={0}
+      hasSideHeaders={true}
+      headings={
+        Array [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+        ]
+      }
+      visibleColumns={5}
+    />
+    <MatrixRow
+      activeSetting={
+        Object {
+          "columnId": 1,
+          "rowId": 1,
+        }
+      }
+      cellWidth={16.666666666666668}
+      columnOffset={0}
+      handleCellClick={[Function]}
+      key="row-0"
+      row={
+        Array [
+          Object {
+            "value": "11",
+          },
+          Object {
+            "value": "12",
+          },
+          Object {
+            "value": "13",
+          },
+          Object {
+            "value": "14",
+          },
+          Object {
+            "value": "15",
+          },
+        ]
+      }
+      rowIndex={0}
+      sideHeading="07:00"
+      visibleColumns={5}
+    />
+    <MatrixRow
+      activeSetting={
+        Object {
+          "columnId": 1,
+          "rowId": 1,
+        }
+      }
+      cellWidth={16.666666666666668}
+      columnOffset={0}
+      handleCellClick={[Function]}
+      key="row-1"
+      row={
+        Array [
+          Object {
+            "value": "21",
+          },
+          Object {
+            "value": "22",
+          },
+          Object {
+            "value": "23",
+          },
+          Object {
+            "value": "24",
+          },
+          Object {
+            "value": "25",
+          },
+        ]
+      }
+      rowIndex={1}
+      sideHeading="10:00"
+      visibleColumns={5}
+    />
+    <MatrixRow
+      activeSetting={
+        Object {
+          "columnId": 1,
+          "rowId": 1,
+        }
+      }
+      cellWidth={16.666666666666668}
+      columnOffset={0}
+      handleCellClick={[Function]}
+      key="row-2"
+      row={
+        Array [
+          Object {
+            "value": "31",
+          },
+          Object {
+            "value": "32",
+          },
+          Object {
+            "value": "33",
+          },
+          Object {
+            "value": "34",
+          },
+          Object {
+            "value": "35",
+          },
+        ]
+      }
+      rowIndex={2}
+      sideHeading="13:00"
+      visibleColumns={5}
+    />
+    <div
+      className="cmc-pagination-matrix__arrow-container"
+    />
+  </div>
+</div>
+`;

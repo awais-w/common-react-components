@@ -1,0 +1,32 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.ac-accordion {
+  display: flex;
+  flex-direction: column;
+  row-gap: $half;
+  .ac-panel.panel-expanded {
+    margin: $double 0;
+    background-color: $primary-color;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    & > div.clickable-panel.panel-heading {
+      color: $color-white;
+      &:hover {
+        background-color: $primary-color;
+      }
+      .cmc-icon,
+      .cmc-icon-custom {
+        color: $color-white;
+      }
+    }
+  }
+  .cmc-icon-label-value {
+    margin-left: $half;
+  }
+  .cmc-icon-custom::before {
+    font-size: $font-size-h2;
+  }
+  .panel-heading .cmc-icon-label-value:last-child {
+    border-left: 1px solid $color-grey-mid;
+    padding-left: $half;
+  }
+}

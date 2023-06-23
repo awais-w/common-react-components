@@ -1,0 +1,18 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-stepper-stage {
+  @include font-standard;
+  min-height: 100%;
+  padding: $double;
+  &__headings {
+    display: inline-block;
+
+    h1,
+    h4 {
+      display: inherit;
+    }
+  }
+  &__page-divider {
+    margin-bottom: $large;
+  }
+}

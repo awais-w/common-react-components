@@ -1,0 +1,33 @@
+{
+  "name": "@cmc/address",
+  "version": "0.4.9",
+  "description": "Component to display addresses",
+  "main": "dist/",
+  "esnext": "esnext/index.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui-components"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@argos/utils": "^2.1.0",
+    "@cmc/icon-label-value": "^0.6.9",
+    "@cmc/utils": "^0.1.2"
+  }
+}

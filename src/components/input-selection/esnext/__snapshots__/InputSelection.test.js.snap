@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputSelection /> should match default snapshot 1`] = `
+<div
+  className="cmc-input-selection"
+>
+  <input
+    checked={true}
+    className="cmc-input-selection__input cmc-input-selection__input--tick"
+    id="checkbox-id"
+    name="checkbox-name"
+    onChange={[MockFunction]}
+    type="checkbox"
+    value="something"
+  />
+  <label
+    className="cmc-input-selection__label"
+    htmlFor="checkbox-id"
+  >
+    <div
+      className="cmc-input-selection__text-container"
+    >
+      Label
+    </div>
+  </label>
+</div>
+`;

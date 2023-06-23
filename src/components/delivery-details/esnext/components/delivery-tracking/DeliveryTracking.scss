@@ -1,0 +1,66 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+.cmc-delivery-tracking {
+  @include font-standard;
+  &--grouped {
+    display: flex;
+    margin: 0;
+
+    div:not(:first-child) {
+      margin-left: $base;
+    }
+  }
+  &__graph {
+    margin-top: $half;
+  }
+  .slot-graph {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr auto 1fr auto;
+    grid-gap: $half;
+    align-items: center;
+    max-width: 500px;
+    margin-top: $double;
+    .slot-range {
+      @include font-bold;
+      color: $color-sainsburys;
+    }
+    .slot-part {
+      @include font-condensed;
+      font-size: $font-size-small;
+    }
+    .slot-line {
+      background-color: $color-sainsburys;
+      height: $base;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      &.first-segment {
+        border-radius: $half 0 0 $half;
+      }
+      &.third-segment {
+        border-radius: 0 $half $half 0;
+      }
+      svg {
+        position: absolute;
+        width: 20px;
+        height: 14px;
+        top: -18px;
+      }
+      &:not(.slot-active) {
+        svg {
+          display: none;
+        }
+      }
+      &.slot-active {
+        background-color: $color-green;
+        &::before {
+          content: '';
+          height: $base;
+          width: $base;
+          background-color: $color-white;
+          transform: rotate(45deg);
+          margin-top: -$half;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema-version": "1.0.0",
+  "maintainers": [
+    {
+      "type": "TEAM",
+      "username": "customer"
+    }
+  ],
+  "owners": [
+    {
+      "type": "TEAM",
+      "username": "customer"
+    }
+  ],
+  "services": [
+    {
+      "name": "cmc-common-react-components",
+      "description": "Shared components for use by CMC ui projects.",
+      "type": "FRONT-END-APP"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "cmc-common-react-components",
+      "type": "BINARY",
+      "format": "DOCKER-IMAGE",
+      "description": "containerised version of the service",
+      "url": "docker.deveng.systems/argos-cmc/common-react-components"
+    }
+  ]
+}

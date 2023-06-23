@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button with no props should match default snapshot 1`] = `
+<div>
+  <button
+    className="cmc-button button 
+      
+      cmc-button__icon cmc-button__icon--left
+      button--default"
+    disabled={false}
+    onClick={null}
+    type="button"
+  >
+    <IconLabelValue
+      icon=""
+      label=""
+    />
+  </button>
+</div>
+`;

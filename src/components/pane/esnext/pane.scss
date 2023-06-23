@@ -1,0 +1,81 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.ac-pane {
+  @include font-standard;
+
+  border-radius: $border-radius-base;
+  border: 2px solid $color-grey-mid;
+  background-color: $color-white;
+  box-shadow: $shadow-standard;
+
+  /* Fixes the ::after for IE11 and Safari 9 */
+  &__header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: $half;
+    & > .cmc-icon,
+    .cmc-icon-custom {
+      color: $color-cerulean;
+      margin-top: -$small;
+    }
+  }
+
+  &__header {
+    display: block;
+    position: relative;
+    padding: $medium $base;
+    background-color: $color-alert-blue;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid $color-cerulean;
+    cursor: pointer;
+  }
+
+  &__title.h3 {
+    margin: 0;
+    line-height: $font-size-large;
+    flex: 1 1 0;
+    color: $color-cerulean;
+    font-size: $font-size-large;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    column-gap: $base;
+    .title-item {
+      white-space: nowrap;
+      padding: 0;
+    }
+  }
+
+  &__title1 {
+    @include font-condensed;
+  }
+  &__title2,
+  &__title3,
+  &__title4 {
+    font-size: $font-size-base;
+    color: $color-grey-charcoal;
+  }
+
+  &__title-right {
+    margin-left: auto;
+  }
+
+  &__body {
+    background-color: $color-white;
+    border-radius: 0 0 $border-radius-base $border-radius-base;
+    padding: $base;
+    &--collapsed {
+      padding: 0 $base;
+      text-align: center;
+      height: $large;
+      cursor: pointer;
+    }
+    &--loading {
+      height: auto;
+      padding: $base;
+    }
+  }
+}

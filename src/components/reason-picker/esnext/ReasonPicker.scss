@@ -1,0 +1,36 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+.cmc-reason-picker {
+  margin-bottom: $double;
+  &__line {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-bottom: $base;
+    grid-column-gap: $base;
+    align-items: center;
+
+    select {
+      margin-bottom: 0;
+      font-size: $font-size-body;
+      align-self: center;
+      height: $input-height-regular;
+    }
+
+    textarea {
+      margin: 0;
+      resize: vertical;
+      height: $input-height-regular;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .cmc-input-selection {
+      &__text-container {
+        > span:not(:last-child) {
+          margin-right: $base;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for pane.story.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> pane.story.jsx
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import { storiesOf } from '@storybook/react';</span>
+<span class="cstat-no" title="statement not covered" >import { withReadme } from 'storybook-readme';</span>
+<span class="cstat-no" title="statement not covered" >import { withKnobs, text } from '@storybook/addon-knobs';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >import Card from '@cmc/card/esnext/card';</span>
+<span class="cstat-no" title="statement not covered" >import Pane from './pane';</span>
+<span class="cstat-no" title="statement not covered" >import README from '../README.md';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >storiesOf('Components|Pane', module)</span>
+  .addParameters({
+    options: { theme: {} },
+  })
+  .addDecorator(withReadme(README))
+  .addDecorator(withKnobs)
+  .add('Delivery Details', <span class="fstat-no" title="function not covered" >() =&gt; (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;Pane</span>
+      key={'delivery'}
+      title1={text('Title 1', 'Delivery Details')}
+      title2={text('Title 2', 'Title 2')}
+      title3={text('Title 3', 'Title 3')}
+      icon={text('Icon', 'local_shipping')}
+    /&gt;
+  ))
+  .add('Payment', <span class="fstat-no" title="function not covered" >() =&gt; (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;Pane</span>
+      key={'payment'}
+      title1={text('Title 1', 'Payment')}
+      title2={text('Title 2', 'Total: £60.40')}
+      icon={text('Icon', 'credit_card')}
+      titleRight={text('Title Right', 'Status')}
+    /&gt;
+  ))
+  .add('Order Details', <span class="fstat-no" title="function not covered" >() =&gt; (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;Pane</span>
+      key={'order'}
+      title1={text('Title 1', 'Order Details')}
+      title2={text('Title 2', 'Order ID: 1234567')}
+      title3={text('Title 3', '20:11 13/02/19: Picked')}
+      icon={text('Icon', 'receipt')}
+    /&gt;
+  ))
+  .add('With embedded card', <span class="fstat-no" title="function not covered" >() =&gt; (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;Pane</span>
+      key={'order'}
+      title1={text('Title 1', 'Order Details')}
+      title2={text('Title 2', 'Order ID: 1234567')}
+      title3={text('Title 3', '20:11 13/02/19: Picked')}
+      icon={text('Icon', 'receipt')}&gt;
+      &lt;Card key={'contact'} title1='Card Title 1' title2='Card title 2' title3='Card title 3' /&gt;
+    &lt;/Pane&gt;
+  ));
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 26 2020 13:44:59 GMT+0000 (Greenwich Mean Time)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>

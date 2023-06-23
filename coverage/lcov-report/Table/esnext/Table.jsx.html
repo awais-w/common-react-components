@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for table/esnext/Table.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">table/esnext</a> Table.jsx
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import bem from '@argos/utils/esnext/bem';
+import './toolbox-table.scss';
+import './Table.scss';
+&nbsp;
+const cn = bem({ prefix: 'atc-toolbox-', block: 'table' });
+&nbsp;
+export function rowValidationCheck({ tableData, headings }, propName, componentName) {
+  if (tableData instanceof Array) {
+    let error = null;
+    tableData.forEach((row) =&gt; {
+      if (Object.keys(row).includes('values')) {
+        if (row.values.length !== headings.length) {
+          error = new Error(`Invalid prop ${propName} supplied to
+                  ${componentName}. Validation failed. All elements of ${propName} should have the same number of elements as headings has`);
+        }
+      } else {
+        error = new Error(`Invalid prop ${propName} supplied to
+              ${componentName}. Validation failed. Each row should contain an array of values`);
+      }
+&nbsp;
+      if (!Object.keys(row).includes('key')) {
+        error = new Error(`Invalid prop ${propName} supplied to
+              ${componentName}. Validation failed. Each row should contain a key`);
+      }
+    });
+    return error || null;
+  }
+&nbsp;
+  return new Error(`Invalid prop ${propName} supplied to
+          ${componentName}. Validation failed. rows should be an array`);
+}
+&nbsp;
+const Table = ({ headings, stickyHeader, stickyFirstColumn, tableData, styles, striped, bordered }) =&gt; {
+  const tblClassNames = classNames('CMCTable', {
+    'sticky-header': stickyHeader,
+    'sticky-first-column': stickyFirstColumn,
+  });
+  return (
+    &lt;div className={cn(null, null)}&gt;
+      &lt;div className={cn('container', null)}&gt;
+        &lt;table className={tblClassNames}&gt;
+          &lt;thead className={cn('header', null)}&gt;
+            &lt;tr&gt;
+              {headings &amp;&amp;
+                headings.map((heading, index) =&gt; (
+                  &lt;th
+                    className={cn('header__cell', null)}
+                    key={`${heading.key ? heading.key : <span class="branch-1 cbranch-no" title="branch not covered" >index}</span>`}
+                    // TODO: replace styles prop with a more defined prop, currently styles prop is only used to set vertical alignment
+                    style={styles &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >{ verticalAlign: `${styles.verticalAlign}` }}</span>&gt;
+                    &lt;h3 className={cn('header__cell__label', null)}&gt;{heading.value}&lt;/h3&gt;
+                  &lt;/th&gt;
+                ))}
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            {tableData &amp;&amp;
+              tableData.map((row) =&gt; {
+                const rowClasses = classNames({
+                  [cn('row', 'highlighted')]: row.isHighlighted,
+                  [cn('body__row')]: !(striped || row.onRowClick),
+                  [cn('body__row', 'striped')]: striped,
+                  [cn('body__row', 'hovered')]: row.onRowClick,
+                });
+                const cellClasses = cn('body__row__cell', bordered ? <span class="branch-0 cbranch-no" title="branch not covered" >'bordered' </span>: '');
+&nbsp;
+                return (
+                  &lt;tr key={row.key} onClick={row.onRowClick} className={rowClasses}&gt;
+                    {row.values.map((field, i) =&gt; {
+                      const cellProps = {
+                        className: cellClasses,
+                        style: styles ? <span class="branch-0 cbranch-no" title="branch not covered" >{ verticalAlign: `${styles.verticalAlign}` } </span>: {},
+                      };
+&nbsp;
+                      const cellContent = field ? &lt;span&gt;{field.value || <span class="branch-1 cbranch-no" title="branch not covered" >field}</span>&lt;/span&gt; : <span class="branch-1 cbranch-no" title="branch not covered" >null;</span>
+&nbsp;
+                      return (
+                        &lt;td key={i} {...cellProps}&gt;
+                          {cellContent}
+                        &lt;/td&gt;
+                      );
+                    })}
+                  &lt;/tr&gt;
+                );
+              })}
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+};
+&nbsp;
+Table.propTypes = {
+  headings: PropTypes.array,
+  tableData: rowValidationCheck,
+  stickyHeader: PropTypes.bool,
+  stickyFirstColumn: PropTypes.bool,
+  styles: PropTypes.shape({
+    verticalAlign: PropTypes.oneOf(['middle', 'bottom']),
+  }),
+};
+&nbsp;
+export default Table;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Apr 15 2021 10:26:14 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $large;
+  width: $large;
+  border-radius: 50%;
+  color: $color-white;
+  @include font-standard;
+  &--red {
+    background-color: $color-red;
+  }
+  &--yellow {
+    background-color: $color-star-stroke;
+  }
+  &--blue {
+    background-color: $primary-color;
+  }
+  &--black {
+    background-color: $color-black;
+  }
+  &--grey {
+    background-color: $color-grey-dark;
+  }
+}

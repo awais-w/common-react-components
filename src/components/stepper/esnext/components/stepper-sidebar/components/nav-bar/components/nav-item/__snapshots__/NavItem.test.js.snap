@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavItem should match default snapshot 1`] = `
+<div
+  className="cmc-nav-item locked"
+  onClick={[Function]}
+>
+  <div
+    className="cmc-nav-item__title"
+  >
+    <Icon
+      icon="favorite"
+      isCustom={false}
+      onClick={null}
+    />
+    My Title
+  </div>
+</div>
+`;

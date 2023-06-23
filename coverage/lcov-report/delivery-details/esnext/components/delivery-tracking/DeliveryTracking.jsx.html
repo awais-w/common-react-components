@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for delivery-details/esnext/components/delivery-tracking/DeliveryTracking.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">delivery-details/esnext/components/delivery-tracking</a> DeliveryTracking.jsx
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import PropTypes from 'prop-types';
+import moment from 'moment';
+import IconLabelValue from '@cmc/icon-label-value/esnext';
+import './DeliveryTracking.scss';
+import { bem } from '@argos/utils';
+import DeliveryGraph from './DeliveryGraph';
+&nbsp;
+const cn = bem({ prefix: 'cmc-', block: 'delivery-tracking' });
+&nbsp;
+const DeliveryTracking = ({
+  actualArrival,
+  plannedArrival,
+  instructions,
+  dropNumber,
+  bookedSlot,
+  price,
+  origin,
+  isClickAndCollect,
+}) =&gt; (
+  &lt;div className={cn()}&gt;
+    &lt;div className={cn('', 'grouped')}&gt;
+      {bookedSlot &amp;&amp; (
+        &lt;div className={cn('booked-slot')}&gt;
+          &lt;IconLabelValue icon={''} label={'Booked slot:'} value={bookedSlot} /&gt;
+        &lt;/div&gt;
+      )}
+      {price &amp;&amp; (
+        &lt;div className={cn('price')}&gt;
+          &lt;IconLabelValue icon={''} label={'Price:'} value={price} /&gt;
+        &lt;/div&gt;
+      )}
+    &lt;/div&gt;
+&nbsp;
+    {(actualArrival || plannedArrival) &amp;&amp; (
+      &lt;div className={cn('', 'grouped')}&gt;
+        {plannedArrival &amp;&amp; (
+          &lt;div className={cn('planned-arrival')}&gt;
+            &lt;IconLabelValue icon={''} label={'Planned:'} value={moment(plannedArrival).format('h:mma')} /&gt;
+          &lt;/div&gt;
+        )}
+        {actualArrival &amp;&amp; (
+          &lt;div className={cn('actual-arrival')}&gt;
+            &lt;IconLabelValue
+              icon={''}
+              label={'Arriving'}
+              value={moment(actualArrival).format('h:mma')}
+              isCondensed={true}
+            /&gt;
+          &lt;/div&gt;
+        )}
+        {dropNumber &amp;&amp; (
+          &lt;div className={cn('drop-number')}&gt;
+            &lt;IconLabelValue icon={''} label={'Drop Number:'} value={dropNumber.toString()} /&gt;
+          &lt;/div&gt;
+        )}
+        {origin &amp;&amp; (
+          &lt;div className={cn('origin')}&gt;
+            &lt;IconLabelValue
+              icon={''}
+              label={'From:'}
+              value={origin.name ? `${origin.name} (${origin.id})` : `${origin.id}`}
+            /&gt;
+          &lt;/div&gt;
+        )}
+      &lt;/div&gt;
+    )}
+    {instructions &amp;&amp; (
+      &lt;div className={cn('instructions')}&gt;
+        &lt;IconLabelValue icon={''} label={'Instructions:'} value={instructions} /&gt;
+      &lt;/div&gt;
+    )}
+    {!isClickAndCollect &amp;&amp; &lt;DeliveryGraph arrivalTime={plannedArrival} /&gt;}
+  &lt;/div&gt;
+);
+&nbsp;
+DeliveryTracking.propTypes = {
+  bookedSlot: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  actualArrival: PropTypes.string,
+  plannedArrival: PropTypes.string,
+  dropNumber: PropTypes.number,
+  origin: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.name.isRequired,
+  }),
+  instructions: PropTypes.string,
+};
+export default DeliveryTracking;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Apr 15 2021 10:26:14 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

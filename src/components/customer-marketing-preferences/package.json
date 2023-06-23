@@ -1,0 +1,34 @@
+{
+  "name": "@cmc/customer-marketing-preferences",
+  "version": "0.7.10",
+  "description": "Customer marketing preferences ( Currently e-mail ) ",
+  "main": "dist/customer-marketing-preferences.min.js",
+  "esnext": "esnext/CustomerMarketingPreferences.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@argos/bolt": "^1.0.9",
+    "@argos/utils": "^2.1.0",
+    "@cmc/cha-button": "^0.8.10",
+    "@cmc/toggle": "^1.5.2"
+  }
+}

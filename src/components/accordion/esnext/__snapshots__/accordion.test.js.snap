@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccordionCard /> with default props should match default snapshot 1`] = `
+<div
+  className="ac-accordion"
+>
+  <AccordionCard
+    allowMultipleOpen={false}
+    cardData={
+      Object {
+        "body": "This is card content.",
+        "header": Object {
+          "actions": Array [
+            Object {
+              "color": "blue",
+              "icon": "icon-url",
+              "isCustom": true,
+              "tooltip": "copy url",
+            },
+            Object {
+              "color": "blue",
+              "icon": "zoom_out_map",
+              "tooltip": "expand transcript",
+            },
+          ],
+          "icon": "forum",
+          "title1": "13 Jan 2020, 00:32:21",
+          "title2": "Order Number: 6000002600",
+        },
+      }
+    }
+    isExpanded={false}
+    key="00000000-0000-0000-0000-000000000000"
+    onCardClick={[Function]}
+  />
+  <Button
+    buttonWidth="containerFit"
+    icon="playlist_add"
+    iconMode="left"
+    isDisabled={false}
+    isLoading={false}
+    isSecondary={true}
+    isShort={true}
+    loadingText=""
+    onClick={[Function]}
+    text="Load More"
+    type="button"
+  />
+</div>
+`;

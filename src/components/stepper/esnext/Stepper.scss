@@ -1,0 +1,161 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-stepper {
+  @include font-standard;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr $super-large;
+
+  &__nav-container {
+    position: relative;
+    width: 300px;
+    transition: width 0.5s;
+  }
+
+  &-container {
+    &__nav-container {
+      height: calc(100vh - 90px);
+      padding-top: $super-double;
+      overflow-y: auto;
+    }
+    &__nav-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $primary-color;
+      color: $color-white;
+      background: #3777bc;
+      color: #fff;
+      height: $super-double;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+      z-index: 2;
+      i {
+        margin-left: $half;
+      }
+    }
+    &__nav-orientation-toggle {
+      position: absolute;
+      top: 0;
+      width: $super-double;
+      display: flex;
+      height: $super-double;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(225, 225, 225, 0.2);
+      cursor: pointer;
+      z-index: 2;
+      .cmc-icon-label-value--inline {
+        margin: 0;
+        opacity: 0.8;
+        transition: opacity 0.5s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &-bottom {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: $input-height-regular;
+        cursor: pointer;
+        color: $primary-color;
+        .cmc-icon-label-value {
+          margin-right: 0;
+          opacity: 0.8;
+          transition: opacity 0.5s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &--nav-left {
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 'navArea contentArea';
+  }
+
+  &--nav-right {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 'contentArea navArea';
+    .cmc-stepper-container__nav-orientation-toggle {
+      right: 0;
+    }
+  }
+
+  &__nav-container {
+    grid-area: navArea;
+    grid-row: span 2;
+    color: $color-grey-charcoal;
+    box-shadow: 0 0 $large rgba(0, 0, 0, 0.2);
+    z-index: 3;
+  }
+
+  &__content-container {
+    grid-area: contentArea;
+    // Content should always come first
+    grid-row: 1;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  &__control-buttons-container {
+    grid-area: contentArea;
+    grid-row: 2;
+    display: grid;
+    align-items: center;
+    background: $color-alert-teal;
+    position: relative;
+    z-index: 1;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+    opacity: 0.35;
+    filter: alpha(opacity=35);
+    box-shadow: none;
+  }
+
+  &--nav-minimize {
+    .cmc-stepper {
+      &__nav-container {
+        width: $super-large;
+        padding-bottom: $input-height-regular;
+      }
+      &-container {
+        &__nav-toggle {
+          i {
+            margin: 0;
+          }
+        }
+        &__nav-orientation-toggle -bottom .cmc-icon-label-value {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@include touch-device-bp1024 {
+  .cmc-stepper-container {
+    &__nav-container {
+      padding-top: $input-height-regular;
+    }
+    &__nav-toggle {
+      height: $input-height-regular;
+    }
+    &__nav-orientation-toggle {
+      width: $input-height-regular;
+      height: $input-height-regular;
+    }
+  }
+}

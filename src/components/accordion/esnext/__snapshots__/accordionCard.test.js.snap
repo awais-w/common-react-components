@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccordionCard /> with default props should match the default snapshot 1`] = `
+<Fragment>
+  <Card
+    icon="forum"
+    isExpanded={false}
+    isLoading={false}
+    onToggle={[Function]}
+    rightIcons={
+      Array [
+        Object {
+          "color": "blue",
+          "icon": "icon-url",
+          "isCustom": true,
+          "tooltip": "copy url",
+        },
+        Object {
+          "color": "blue",
+          "icon": "zoom_out_map",
+          "tooltip": "expand transcript",
+        },
+        Object {
+          "icon": "expand_more",
+          "tooltip": "",
+        },
+      ]
+    }
+    title1="13 Jan 2020, 00:32:21"
+    title2="Order Number: 6000002600"
+  >
+    This is card content.
+  </Card>
+</Fragment>
+`;

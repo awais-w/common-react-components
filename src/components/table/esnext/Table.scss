@@ -1,0 +1,132 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.CMCTable {
+  width: 100%;
+
+  &.sticky-header {
+    .atc-toolbox-table__header__cell {
+      background-color: $color-white;
+      top: -$small;
+    }
+  }
+}
+
+.atc-toolbox-table {
+  @include font-standard;
+
+  &__container {
+    overflow-x: auto;
+  }
+
+  &__header {
+    &__cell {
+      padding: $medium $base;
+      &__label {
+        text-transform: uppercase;
+        font-size: $font-size-body;
+        @include font-condensed-bold;
+      }
+    }
+  }
+
+  &__container {
+    border-radius: $half $half 0 0;
+  }
+
+  &__body__row {
+    &__cell {
+      padding: $base;
+    }
+  }
+
+  &__row--highlighted {
+    background: $color-alert-blue;
+
+    td {
+      background: $color-alert-blue;
+    }
+  }
+
+  tr {
+    td {
+      @include font-standard;
+    }
+
+    cursor: auto;
+
+    &:hover {
+      .tooltip {
+        display: block;
+      }
+    }
+
+    .tooltip {
+      display: none;
+    }
+
+    &.row--hasHover {
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-grey-light; //TODO: define what's the hover behaviour we want and extrat it to mixins
+
+        .tooltip {
+          display: block;
+        }
+      }
+    }
+  }
+
+  span.badge {
+    margin-left: $half;
+    padding: $small $half;
+    background: $color-grey-light;
+  }
+}
+
+.sticky-header th {
+  position: sticky;
+  top: 0;
+
+  /* Prevent items underneath header showing */
+  z-index: 2;
+
+  /* No transparent background */
+  background-color: $color-white;
+  border-bottom: 1px solid $color-grey-mid;
+}
+
+.sticky-first-column tbody > tr > td:first-of-type {
+  position: sticky;
+  left: 0;
+
+  /* Header should always show over sticky column
+  but the column should still be above content */
+  z-index: 1;
+  background-color: $color-white;
+}
+
+/* The left column header needs to always sit on top
+of all content ( Including headers further on the right when scrolling ) */
+.sticky-first-column thead > tr > th:first-of-type {
+  position: sticky;
+  left: 0;
+  top: 0;
+
+  /* Needs to sit above other headers when scrolling right */
+  z-index: 3;
+
+  /* No transparent background */
+  background-color: $color-white;
+}
+
+@include touch-device-bp1024 {
+  .atc-toolbox-table {
+    &__header,
+    &__body__row {
+      &__cell {
+        padding: $double;
+      }
+    }
+  }
+}

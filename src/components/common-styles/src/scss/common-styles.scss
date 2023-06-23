@@ -1,0 +1,228 @@
+@import './_variables';
+
+body,
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  font-size: $font-size-body;
+  @include font-standard;
+}
+h1 {
+  font-size: $font-size-h1;
+}
+h2 {
+  font-size: $font-size-h2;
+}
+h3 {
+  font-size: $font-size-h3;
+}
+h4 {
+  font-size: $font-size-h4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include font-condensed;
+  a,
+  abbr,
+  acronym,
+  address,
+  applet,
+  article,
+  aside,
+  audio,
+  b,
+  big,
+  blockquote,
+  body,
+  canvas,
+  caption,
+  center,
+  cite,
+  code,
+  dd,
+  del,
+  details,
+  dfn,
+  div,
+  dl,
+  dt,
+  em,
+  embed,
+  fieldset,
+  figcaption,
+  figure,
+  footer,
+  form,
+  h5,
+  h6,
+  header,
+  hgroup,
+  html,
+  i,
+  iframe,
+  img,
+  ins,
+  kbd,
+  label,
+  legend,
+  li,
+  mark,
+  menu,
+  nav,
+  object,
+  ol,
+  output,
+  p,
+  pre,
+  q,
+  ruby,
+  s,
+  samp,
+  section,
+  small,
+  span,
+  strike,
+  strong,
+  sub,
+  summary,
+  sup,
+  table,
+  tbody,
+  td,
+  tfoot,
+  th,
+  thead,
+  time,
+  tr,
+  tt,
+  u,
+  ul,
+  var,
+  video {
+    font-size: inherit;
+  }
+}
+
+label {
+  font-size: $font-size-small;
+}
+
+.form-group {
+  line-height: normal;
+  margin-bottom: $double;
+}
+
+.form-control {
+  padding: 0 $base;
+  margin: 0;
+  font-size: $font-size-body;
+}
+
+select,
+textarea,
+input[type='text'] {
+  &.form-control {
+    border: 1px solid $color-grey-mid;
+    border-radius: $half;
+    &:focus {
+      border-color: $primary-color;
+    }
+    &[disabled] {
+      background-color: $color-grey-light;
+      cursor: not-allowed;
+    }
+  }
+}
+
+textarea.form-control {
+  height: auto;
+  padding: $base;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+  box-shadow: none;
+}
+
+.react-loading-skeleton:not(:last-child) {
+  margin-bottom: $half;
+}

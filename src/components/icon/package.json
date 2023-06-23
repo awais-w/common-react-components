@@ -1,0 +1,31 @@
+{
+  "name": "@cmc/icon",
+  "version": "0.4.5",
+  "description": "Wrapper to display icons",
+  "main": "dist/",
+  "esnext": "esnext/index.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@cmc/common-styles": "^0.2.3"
+  }
+}

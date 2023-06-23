@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Popover.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> Popover.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">68.09% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>32/47</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">27.78% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>5/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">68.09% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>32/47</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { createRef } from 'react';
+import PropTypes from 'prop-types';
+import bem from '@argos/utils/esnext/bem';
+import './Popover.scss';
+&nbsp;
+const cn = bem({ prefix: 'cmc-', block: 'popover' });
+const modes = ['auto', 'right', 'bottom', 'left', 'top'];
+&nbsp;
+class Popover extends React.Component {
+  constructor(props) {
+    super(props);
+&nbsp;
+    this.elementRef = createRef();
+    this.contentRef = createRef();
+&nbsp;
+    this.state = {
+      isVisible: false,
+      mode: this.props.mode,
+      positionX: 0,
+      positionY: 0,
+    };
+  }
+&nbsp;
+  componentDidMount() {
+    const parentElement = this.getParentElement();
+    parentElement.addEventListener('mouseover', this.handleParentMouseOver);
+    parentElement.addEventListener('mouseout', this.handleParentMouseOut);
+  }
+&nbsp;
+  componentDidUpdate(oldProps) {
+    const newProps = this.props;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (oldProps.mode !== newProps.mode) {
+<span class="cstat-no" title="statement not covered" >      this.setState({ mode: newProps.mode });</span>
+    }
+  }
+&nbsp;
+  getParentElement = () =&gt; this.elementRef.current.parentElement;
+&nbsp;
+  handleParentMouseOver = () =&gt; {
+    this.setPopoverPosition();
+    this.setState({ isVisible: true });
+  };
+&nbsp;
+  handleParentMouseOut = () =&gt; this.setState({ isVisible: false });
+&nbsp;
+  setPopoverPosition = () =&gt; {
+    const parentX = this.getParentElement().getBoundingClientRect().x;
+    const parentY = this.getParentElement().getBoundingClientRect().y;
+    const parentW = this.getParentElement().getBoundingClientRect().width;
+    const parentH = this.getParentElement().getBoundingClientRect().height;
+    const contentW = this.contentRef.current.offsetWidth;
+    const contentH = this.contentRef.current.offsetHeight;
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+&nbsp;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (this.props.mode === 'auto') {
+<span class="cstat-no" title="statement not covered" >      if (contentW &lt; vw - parentX - parentW) {</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ mode: 'right' });</span>
+      } else <span class="cstat-no" title="statement not covered" >if (contentW &lt; parentX) {</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ mode: 'left' });</span>
+      } else <span class="cstat-no" title="statement not covered" >if (contentH &lt; vh - parentY - parentH) {</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ mode: 'bottom' });</span>
+      } else <span class="cstat-no" title="statement not covered" >if (contentH &lt; parentY) {</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({ mode: 'top' });</span>
+      }
+    }
+&nbsp;
+    switch (this.state.mode) {
+<span class="branch-0 cbranch-no" title="branch not covered" >      case 'left':</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({</span>
+          positionX: parentX,
+          positionY: parentY + parentH / 2,
+        });
+<span class="cstat-no" title="statement not covered" >        break;</span>
+&nbsp;
+<span class="branch-1 cbranch-no" title="branch not covered" >      case 'top':</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({</span>
+          positionX: parentX + parentW / 2,
+          positionY: parentY,
+        });
+<span class="cstat-no" title="statement not covered" >        break;</span>
+&nbsp;
+<span class="branch-2 cbranch-no" title="branch not covered" >      case 'bottom':</span>
+<span class="cstat-no" title="statement not covered" >        this.setState({</span>
+          positionX: parentX + parentW / 2,
+          positionY: parentY + parentH,
+        });
+<span class="cstat-no" title="statement not covered" >        break;</span>
+&nbsp;
+      default:
+        this.setState({
+          positionX: parentX + parentW,
+          positionY: parentY + parentH / 2,
+        });
+        break;
+    }
+  };
+&nbsp;
+  render() {
+    const { isVisible, mode, positionX, positionY } = this.state;
+    const { children } = this.props;
+&nbsp;
+    return (
+      &lt;div
+        className={cn(null, isVisible ? `${mode}` : 'hidden')}
+        style={{ left: `${positionX}px`, top: `${positionY}px` }}
+        ref={this.elementRef}&gt;
+        &lt;div className={cn('content', mode)} ref={this.contentRef}&gt;
+          {children}
+        &lt;/div&gt;
+        &lt;div className={cn('arrow', mode)} /&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+&nbsp;
+Popover.propTypes = {
+  mode: PropTypes.oneOf(modes),
+};
+&nbsp;
+Popover.defaultProps = {
+  mode: 'right',
+};
+&nbsp;
+export default Popover;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Nov 23 2019 18:35:47 GMT+0000 (Greenwich Mean Time)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>

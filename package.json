@@ -1,0 +1,126 @@
+{
+  "name": "common-react-components",
+  "version": "0.2.23",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "src/components/*"
+  ],
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sainsburys-tech/cmc-common-react-components.git"
+  },
+  "scripts": {
+    "--------- DEVELOPMENT ------------------": "",
+    "start": "start-storybook -s ./static -p 9001 -c .storybook",
+    "--------- PRODUCTION ------------------": "",
+    "start:ci": "start-storybook --ci -s ./static -p 9001 -c .storybook",
+    "--------- TESTING ------------------": "",
+    "test:unit": "jest --coverage --config ./config/jest/jest.config.js",
+    "test:watch": "jest --watch --config ./config/jest/jest.config.js",
+    "--------- LINTING ------------------": "",
+    "lint:js": "eslint src/components/*/esnext/*.{js,jsx}",
+    "lint:scss": "stylelint src/components/*/esnext/*.{css,scss}",
+    "format": "prettier --write \"**/*.{json,md}\"",
+    "format:diff": "prettier --list-different \"**/*.{json,md}\"",
+    "lint:all": "yarn lint:js && yarn lint:scss && yarn format:diff",
+    "--------- HELPERS ---------": "",
+    "nuke": "rm -rf node_modules && yarn clean && yarn",
+    "clean": "yarn remove:emptyDirs && yarn remove:generatedFiles",
+    "remove:emptyDirs": "find ./src/components -maxdepth 2 -name 'node_modules' -type d -exec rm -rf {} + && find ./src/components -type d -empty -delete",
+    "remove:generatedFiles": "find . -name package-lock.json -type f -delete && find ./src/components -maxdepth 2 -name 'dist' -type d -exec rm -rf {} + ",
+    "--------- PUBLISH ------------------": "",
+    "pub": "yarn pub:checkBranch && yarn pre-publish && yarn unprotect-master && lerna publish && yarn protect-master",
+    "pub:checkBranch": "node -e 'require(\"./config/setup/branchCheck\")(\"master\")'",
+    "--": "TODO: check that there are no uncommitted changes",
+    "pre-publish": "git fetch && git pull --ff-only && yarn test:unit && yarn lint:all",
+    "unprotect-master": "bash scripts/unprotect-master.sh",
+    "protect-master": "bash scripts/protect-master.sh"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn test:unit",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@argos/loading-wheel": "^1.0.25",
+    "@argos/utils": "^2.1.0",
+    "@babel/polyfill": "^7.6.0",
+    "@storybook/addon-options": "^5.3.21",
+    "@storybook/react": "^5.3.21",
+    "classnames": "^2.2.6",
+    "jest-fetch-mock": "^2.1.2",
+    "lerna": "^2.11.0",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "^2.1.2",
+    "react-scroll": "^1.8.1",
+    "react-transition-group": "^2.5.3",
+    "react-waypoint": "^8.1.0",
+    "showdown": "^1.9.1",
+    "storybook-readme": "^5.0.8",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "@argos/eslint-config": "^1.1.2",
+    "@babel/core": "^7.12.3",
+    "@storybook/addon-actions": "^5.3.21",
+    "@storybook/addon-knobs": "^5.3.21",
+    "@storybook/addon-links": "^5.3.21",
+    "@storybook/addon-notes": "^5.3.21",
+    "@storybook/addons": "^5.3.21",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel7-jest": "^1.0.1",
+    "cross-env": "^5.2.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-jest-enzyme": "^7.1.2",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.4",
+    "git-branch-is": "^2.1.0",
+    "husky": "^1.3.1",
+    "jest-enzyme": "^7.1.2",
+    "lint-staged": "^10.4.2",
+    "node-emoji": "^1.10.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.1.2",
+    "sinon": "^7.5.0",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-prettier": "^1.1.2",
+    "svg-inline-loader": "^0.8.2",
+    "webpack-messages": "^2.0.4"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

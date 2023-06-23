@@ -1,0 +1,8 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-store-lookup__retry {
+  margin: 0 $half;
+  cursor: pointer;
+  color: $color-blue-cobalt;
+  text-decoration: underline;
+}

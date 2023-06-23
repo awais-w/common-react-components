@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for input-selection/esnext/InputSelection.story.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">input-selection/esnext</a> InputSelection.story.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/23</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React, { useState } from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import { storiesOf } from '@storybook/react';</span>
+<span class="cstat-no" title="statement not covered" >import { withReadme } from 'storybook-readme';</span>
+<span class="cstat-no" title="statement not covered" >import { withKnobs, select } from '@storybook/addon-knobs';</span>
+<span class="cstat-no" title="statement not covered" >import { action } from '@storybook/addon-actions';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >import InputSelection from './InputSelection';</span>
+<span class="cstat-no" title="statement not covered" >import README from '../README.md';</span>
+&nbsp;
+const <span class="fstat-no" title="function not covered" >CheckboxInputSelectionWrapper = <span class="cstat-no" title="statement not covered" >(</span>) =&gt; <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+  const [selectedOptions, setOption] = <span class="cstat-no" title="statement not covered" >useState({ Value1: false, Value2: false });</span>
+&nbsp;
+  const <span class="fstat-no" title="function not covered" >handleClick = <span class="cstat-no" title="statement not covered" >(</span>event, a) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    console.log('action:', a);</span>
+<span class="cstat-no" title="statement not covered" >    setOption({ ...selectedOptions, [event.target.value]: event.target.checked });</span>
+  };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;ul&gt;
+      &lt;li style={{ marginBottom: '10px' }}&gt;
+        &lt;InputSelection
+          id={'checkbox-component-id-1'}
+          name='demo-checkbox-1'
+          value='Value1'
+          inputType='checkbox'
+          onChange={<span class="fstat-no" title="function not covered" >(</span>e) =&gt; {
+<span class="cstat-no" title="statement not covered" >            handleClick(e, action("You've clicked a checkbox!"));</span>
+          }}
+          checked={selectedOptions.Value1}
+          children='Item number one'
+          checkboxIconType={select('icon', ['tick', 'cross', 'line'], 'tick')}
+        /&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;InputSelection
+          id={'checkbox-component-id-2'}
+          name='demo-checkbox-2'
+          value='Value2'
+          inputType='checkbox'
+          onChange={handleClick}
+          checked={selectedOptions.Value2}
+          children='Item number two'
+          checkboxIconType={select('icon', ['tick', 'cross', 'line'], 'tick')}
+        /&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  );
+};
+&nbsp;
+const <span class="fstat-no" title="function not covered" >RadioInputSelectionWrapper = <span class="cstat-no" title="statement not covered" >(</span>) =&gt; <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+  const [selectedOption, setOption] = <span class="cstat-no" title="statement not covered" >useState(false);</span>
+  const <span class="fstat-no" title="function not covered" >handleClick = <span class="cstat-no" title="statement not covered" >(</span>event) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    action("You've clicked a radio button!");</span>
+<span class="cstat-no" title="statement not covered" >    setOption(event.target.value);</span>
+  };
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;ul&gt;
+      &lt;li style={{ marginBottom: '10px' }}&gt;
+        &lt;InputSelection
+          id={'radio-component-id-1'}
+          name='demo-radio'
+          onChange={handleClick}
+          checked={selectedOption === 'Value1'}
+          value='Value1'
+          children='Item number one'
+          inputType='radio'
+        /&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;InputSelection
+          id={'radio-component-id-2'}
+          name='demo-radio'
+          onChange={handleClick}
+          checked={selectedOption === 'Value2'}
+          value='Value2'
+          children='Item number two'
+          inputType='radio'
+        /&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  );
+};
+&nbsp;
+<span class="cstat-no" title="statement not covered" >storiesOf('Components|InputSelection', module)</span>
+  .addDecorator(withReadme(README))
+  .addDecorator(withKnobs)
+  .add('Checkbox InputSelection', <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; </span>&lt;CheckboxInputSelectionWrapper /&gt;)</span>
+  .add('Radio InputSelection', <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; </span>&lt;RadioInputSelectionWrapper /&gt;);</span>
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Sep 24 2020 13:44:17 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

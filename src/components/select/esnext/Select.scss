@@ -1,0 +1,38 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-select {
+  &__label {
+    letter-spacing: 0.04em;
+    color: darken($color-grey-dark, 10%);
+    margin-bottom: $small;
+  }
+  &__list {
+    height: $input-height-regular;
+    padding-right: $double;
+    &--short {
+      height: $super-double;
+      @include touch-device-bp1024 {
+        height: $input-height-regular;
+      }
+    }
+  }
+  &.has-error {
+    .cmc-select {
+      &__list {
+        border-color: $color-rust;
+      }
+      &__help-block {
+        color: $color-rust;
+        margin-top: $small;
+      }
+    }
+  }
+  &.applied {
+    .cmc-select {
+      &__list {
+        border-color: $color-green;
+        background-color: $color-alert-teal;
+      }
+    }
+  }
+}

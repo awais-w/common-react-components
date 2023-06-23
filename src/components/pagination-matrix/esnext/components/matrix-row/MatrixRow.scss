@@ -1,0 +1,45 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+@import '../../Matrix.scss';
+
+.cmc-pagination-matrix__row {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin-bottom: $half;
+  position: relative;
+  min-height: $minCellHeight;
+
+  .cmc-pagination-matrix__blank {
+    @include setupBorders($headingBorderWidth, $headingBorderRadius, transparent);
+    min-width: 100px;
+    margin: 0 $half;
+  }
+  .cmc-pagination-matrix__heading {
+    @include setupBorders($headingBorderWidth, $headingBorderRadius, transparent);
+    @include headingSettings;
+
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0 $small;
+
+    &.cmc-pagination-matrix__heading--active {
+      @include setupBorders($headingBorderWidth, $headingBorderRadius, $color-blue-cobalt);
+    }
+  }
+
+  .cmc-pagination-matrix__side-heading {
+    @include setupBorders($headingBorderWidth, $headingBorderRadius, transparent);
+    @include verticalCenter;
+    @include headingSettings;
+
+    text-align: left;
+    min-width: $minCellWidth;
+    margin: 0 $small;
+    white-space: nowrap;
+    min-width: 100px;
+
+    &.cmc-pagination-matrix__side-heading--active {
+      @include setupBorders($headingBorderWidth, $headingBorderRadius, $color-blue-cobalt);
+    }
+  }
+}

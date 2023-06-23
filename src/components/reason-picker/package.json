@@ -1,0 +1,31 @@
+{
+  "name": "@cmc/reason-picker",
+  "version": "0.4.2",
+  "description": "ReasonPicker",
+  "main": "dist/",
+  "esnext": "esnext/ReasonPicker.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui-components"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@cmc/input-selection": "^0.5.2"
+  }
+}

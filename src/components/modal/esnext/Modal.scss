@@ -1,0 +1,83 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+.cmc-modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  @include font-standard;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    width: 50%;
+    padding: 0;
+    border-radius: $half;
+    background: $color-white;
+    position: relative;
+    z-index: 6;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include prefix(box-shadow, 0px 0px $large $half rgba(0, 0, 0, 0.7), webkit moz);
+
+    &-header {
+      display: flex;
+      align-items: center;
+      padding: $base $double;
+      margin: 0;
+      overflow: hidden;
+      border-bottom: 1px solid $color-grey-mid;
+      @include font-condensed;
+
+      h1 {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: $font-size-h2;
+      }
+
+      #close {
+        align-self: center;
+        justify-self: flex-end;
+        order: 2;
+        margin-left: auto;
+        margin-top: 0;
+        font-size: 35px;
+        cursor: pointer;
+      }
+    }
+
+    &-content {
+      width: 100%;
+      margin: $double 0;
+      padding: 0 $double;
+      text-align: center;
+      max-height: calc(100vh - 180px);
+      overflow: auto;
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding: 0 $double;
+      margin: $double 0;
+      &-button:not(:last-child) {
+        margin-right: $double;
+      }
+    }
+  }
+
+  &__outside {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+  }
+}

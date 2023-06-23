@@ -1,0 +1,36 @@
+{
+  "name": "@cmc/icon-label-value",
+  "version": "0.6.9",
+  "description": "IconLabelValue",
+  "main": "dist/",
+  "esnext": "esnext/IconLabelValue.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui-components"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@argos/bolt": "^1.0.10",
+    "@argos/utils": "^2.1.0",
+    "@cmc/icon": "^0.4.5",
+    "@cmc/utils": "^0.1.2",
+    "react-tooltip": "^3.10.0",
+    "uuid": "^3.3.2"
+  }
+}

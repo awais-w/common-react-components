@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreditCardDetails should match all props snapshot 1`] = `
+<div
+  className="cmc-credit-card-details"
+>
+  <i
+    className="cmc-icon"
+    role="icon"
+  >
+    credit_card
+  </i>
+  <span>
+    Argos Card
+  </span>
+  <span>
+    XXXX-XXXX-XXXX-1234
+  </span>
+  <span>
+    01/19 - 05/99
+  </span>
+  <span>
+    Mr Test Person
+  </span>
+</div>
+`;
+
+exports[`CreditCardDetails should match required props snapshot 1`] = `
+<div
+  className="cmc-credit-card-details"
+>
+  <i
+    className="cmc-icon"
+    role="icon"
+  >
+    credit_card
+  </i>
+  <span>
+    XXXX-XXXX-XXXX-1234
+  </span>
+  <span>
+    No expiration provided
+  </span>
+</div>
+`;

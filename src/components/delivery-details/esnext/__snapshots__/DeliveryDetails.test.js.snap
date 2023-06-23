@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeliveryDetails renders should match default snapshot 1`] = `
+<div
+  className="cmc-delivery-details"
+>
+  <div
+    className="cmc-delivery-details__contact-details"
+  >
+    <ContactDetails
+      business="My business"
+      emails={
+        Array [
+          Object {
+            "address": "address1",
+            "type": "type1",
+          },
+          Object {
+            "address": "address2",
+            "type": "type2",
+          },
+        ]
+      }
+      groupFields={true}
+      person={
+        Object {
+          "middleName": "Jose",
+          "name": "Francisco",
+          "surname": "Lopez",
+          "title": "Mr",
+        }
+      }
+      telephones={
+        Array [
+          Object {
+            "number": "number1",
+            "type": "type1",
+          },
+          Object {
+            "number": "number2",
+            "type": "type2",
+          },
+        ]
+      }
+    />
+    <Address
+      address={
+        Object {
+          "city": "city",
+          "country": "country",
+          "county": "county",
+          "line1": "line1",
+          "line2": "line2",
+          "line3": "line3",
+          "postcode": "postcode",
+        }
+      }
+      mode="INLINE"
+    />
+  </div>
+  <div
+    className="cmc-delivery-details__delivery-tracking"
+  >
+    <DeliveryTracking
+      actualArrival="7:46am"
+      bookedSlot="11:00am - 12:00pm"
+      dropNumber={26}
+      instructions="instructions"
+      origin="0932"
+      plannedArrival="7:45am"
+      price="£6.98"
+    />
+  </div>
+</div>
+`;

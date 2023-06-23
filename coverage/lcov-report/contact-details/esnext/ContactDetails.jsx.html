@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contact-details/esnext/ContactDetails.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">contact-details/esnext</a> ContactDetails.jsx
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import IconLabelValue from '@cmc/icon-label-value/esnext';
+import bem from '@argos/utils/esnext/bem';
+import { formatName } from '@cmc/utils/esnext';
+&nbsp;
+const cn = bem({ block: 'ContactDetails' });
+&nbsp;
+const ContactDetails = ({ telephones = [], emails = [], person = <span class="branch-0 cbranch-no" title="branch not covered" >{},</span> business, groupFields }) =&gt; {
+  const telephoneCPs = telephones.map((telephone, index) =&gt; (
+    &lt;IconLabelValue
+      isInline={groupFields}
+      icon={groupFields &amp;&amp; index ? '' : 'call'}
+      label={telephones.length &gt; 1 &amp;&amp; telephone.type}
+      value={telephone.number}
+      key={`telephone-${telephone.number}`}
+    /&gt;
+  ));
+  const emailCPs = emails.map((email, index) =&gt; (
+    &lt;IconLabelValue
+      isInline={groupFields}
+      icon={groupFields &amp;&amp; index ? '' : 'mail'}
+      label={emails.length &gt; 1 &amp;&amp; email.type}
+      value={email.address}
+      key={`email-${email.address}`}
+    /&gt;
+  ));
+&nbsp;
+  return (
+    &lt;Fragment&gt;
+      {business &amp;&amp; (
+        &lt;div className={cn('business')}&gt;
+          &lt;IconLabelValue icon='business_center' value={business} /&gt;
+        &lt;/div&gt;
+      )}
+      &lt;div className={cn('full-name')}&gt;
+        &lt;IconLabelValue icon='person' value={(person.name || <span class="branch-1 cbranch-no" title="branch not covered" >person.surname)</span> &amp;&amp; formatName({ ...person })} /&gt;
+      &lt;/div&gt;
+      &lt;div className={cn('telephones')}&gt;{telephoneCPs}&lt;/div&gt;
+      &lt;div className={cn('emails')}&gt;{emailCPs}&lt;/div&gt;
+    &lt;/Fragment&gt;
+  );
+};
+&nbsp;
+ContactDetails.propTypes = {
+  business: PropTypes.string,
+  person: PropTypes.shape({
+    title: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    middleName: PropTypes.string,
+    surname: PropTypes.string.isRequired,
+  }).isRequired,
+  emails: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.string,
+      address: PropTypes.string.isRequired,
+    }),
+  ),
+  telephones: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.string,
+      number: PropTypes.string.isRequired,
+    }),
+  ),
+  groupFields: PropTypes.bool,
+};
+export default ContactDetails;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Apr 15 2021 10:26:14 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+@mixin stylePanel($colour: $color-white, $textColour: $color-grey-charcoal) {
+  $light: 5%;
+  $dark: 10%;
+
+  background-color: $colour;
+
+  & > div.clickable-panel.panel-heading:hover {
+    background-color: darken($colour, $dark);
+  }
+
+  & > .panel-heading {
+    color: $textColour;
+  }
+}
+
+.ac-panel {
+  font-size: $font-size-body;
+  margin-bottom: 0;
+  border-radius: $half;
+  &__header {
+    padding: $base;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    &::before,
+    &::after {
+      content: none;
+    }
+    &-wrapper {
+      align-items: center;
+    }
+    &-right {
+      display: flex;
+      justify-self: flex-end;
+      align-items: center;
+      column-gap: $base;
+      .cmc-icon-label-value > * {
+        margin: 0;
+      }
+    }
+    &.clickable-panel {
+      cursor: pointer;
+    }
+  }
+  &__actions {
+    display: inline-block;
+    .cmc-icon-label-value {
+      .cmc-icon {
+        color: inherit;
+      }
+    }
+  }
+  &__pre-icon {
+    border-radius: 50%;
+    width: $large;
+    height: $large;
+    padding: $half;
+    margin-right: $half;
+    margin-top: -$half;
+    border: 1px solid currentColor;
+    fill: currentColor;
+
+    &--tick-icon {
+      border: 1px solid $color-green;
+      color: $color-green;
+    }
+    &--cross-icon {
+      border: 1px solid $color-rust;
+      color: $color-rust;
+    }
+  }
+  &__icon {
+    border: none;
+    width: $large;
+    height: $large;
+    margin-right: $base;
+    margin-left: 0;
+  }
+  &__title {
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    column-gap: $base;
+  }
+  &__title1 {
+    @include font-condensed;
+  }
+  &__title2,
+  &__title3 {
+    @include font-standard;
+    font-size: $font-size-body;
+  }
+  &__body,
+  &__summary {
+    background-color: $color-white;
+    border-radius: 0 0 $half $half;
+    padding: $base;
+  }
+
+  &__actions-icon {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__actions-menu {
+    display: none;
+    &--open {
+      position: absolute;
+      background: $color-white;
+      margin-top: $medium;
+      right: 0;
+      z-index: 1;
+      display: block;
+      width: max-content;
+      border-radius: 0 0 $half $half;
+      box-shadow: 0 $base $medium rgba(0, 0, 0, 0.175);
+      .actions-item {
+        padding: $base $double;
+        color: $color-grey-charcoal;
+        cursor: pointer;
+        &:not(:last-child) {
+          border-bottom: 1px dashed $color-grey-mid;
+        }
+        &:hover {
+          background: $color-grey-light;
+        }
+      }
+    }
+  }
+
+  &.panel-collapsed,
+  &.panel-default {
+    @include stylePanel($color-grey-light);
+  }
+
+  &.panel-expanded {
+    @include stylePanel(darken($color-grey-light, 10%));
+  }
+
+  &.panel-notify {
+    @include stylePanel($color-alert-orange);
+  }
+
+  &.status-other,
+  &.status-mixed,
+  &.status-created {
+    @include stylePanel(lighten($color-clearance, 25%));
+  }
+
+  &.status-in_progress,
+  &.status-return_in_progress,
+  &.status-in_transit {
+    @include stylePanel($color-alert-blue);
+  }
+
+  &.status-delivered,
+  &.status-collected,
+  &.status-ready_to_collect {
+    @include stylePanel(lighten($color-green-forest, 50%));
+  }
+
+  &.status-returned,
+  &.status-refunded,
+  &.status-cancelled {
+    @include stylePanel(darken($color-alert-orange, 20%));
+  }
+
+  &.status-return_failed,
+  &.status-failed {
+    @include stylePanel(lighten($color-red, 45%));
+  }
+
+  &.nested-panel {
+    @include stylePanel($color-alert-teal, $color-grey-charcoal);
+    border-bottom-width: 2px;
+    margin-bottom: $half;
+    > .ac-panel__header {
+      border-bottom: 0;
+    }
+    > .clickable-panel {
+      border-bottom: 0;
+      &:hover + .ac-panel__body,
+      &:hover + .ac-panel__summary {
+        border-left-color: darken($color-alert-teal, 10%);
+      }
+    }
+    > .ac-panel__body,
+    > .ac-panel__summary {
+      border-left: $base solid $color-alert-teal;
+    }
+  }
+
+  &.panel-highlighted {
+    @include stylePanel(lighten($color-cerulean-light, 10%));
+  }
+}
+.cmc-line-item:last-child .nested-panel {
+  margin-bottom: 0;
+}
+
+@include touch-device-bp1024 {
+  .ac-panel__header {
+    padding: $medium;
+  }
+}

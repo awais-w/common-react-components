@@ -1,0 +1,31 @@
+{
+  "name": "@cmc/chip",
+  "version": "0.1.1",
+  "description": "Chips are compact elements that represent an input, attribute, or action.",
+  "main": "dist/",
+  "esnext": "esnext/Chip.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui-components"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@cmc/icon": "^0.4.5"
+  }
+}

@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for PaginationMatrix.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> PaginationMatrix.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.38% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>53/58</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.95% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>51/63</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>13/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.07% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>51/56</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
+import isEmpty from '@cmc/utils/esnext/isEmpty';
+import Loading from '@cmc/loading/esnext/Loading';
+import bem from '@argos/utils/esnext/bem';
+import Button from '@cmc/cha-button/esnext/Button';
+import './PaginationMatrix.scss';
+import MatrixRow from './components/matrix-row/MatrixRow';
+import MatrixHeadings from './components/matrix-headings/MatrixHeadings';
+&nbsp;
+export function checkMatrixData(props, propName, componentName) {
+  // get lengths
+  const headingsLength = props.matrixData.headings &amp;&amp; props.matrixData.headings.length;
+  const sideHeadingsLength = props.matrixData.sideHeadings &amp;&amp; props.matrixData.sideHeadings.length;
+  const rowsLength = props.matrixData.rows &amp;&amp; props.matrixData.rows.length;
+  // check if data is empty or not
+  const headingsEmpty = headingsLength === 0;
+  const sideHeadingsEmpty = sideHeadingsLength === 0;
+  const rowsEmpty = rowsLength === 0;
+  // TODO: remove this variable and rather than assingning values to error we should return
+  let error = null;
+  // display error if no data is provided at all
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (headingsEmpty &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >sideHeadingsEmpty </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >rowsEmpty)</span> {
+<span class="cstat-no" title="statement not covered" >    error = new Error(</span>
+      `Invalid prop \`${propName}\` supplied to` +
+        ` \`${componentName}\`. Validation failed. No data provided to ${propName}`,
+    );
+  }
+&nbsp;
+  // display error if both headings and rows are empty
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (headingsEmpty &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >rowsEmpty)</span> {
+<span class="cstat-no" title="statement not covered" >    error = new Error(</span>
+      `Invalid prop \`${propName}\` supplied to` +
+        ` \`${componentName}\`. Validation failed. No headings or rows provided to ${propName}`,
+    );
+  }
+&nbsp;
+  // display error if there are side headings but not enough rows to match
+  if (!sideHeadingsEmpty &amp;&amp; props.matrixData.sideHeadings !== undefined) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (sideHeadingsLength !== rowsLength) {
+<span class="cstat-no" title="statement not covered" >      error = new Error(</span>
+        `Invalid prop \`${propName}\` supplied to` +
+          ` \`${componentName}\`. Validation failed. Sideheadings and rows should match up in ${propName}`,
+      );
+    }
+  }
+&nbsp;
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (!rowsEmpty &amp;&amp; !headingsEmpty) {
+    props.matrixData.rows.forEach((row) =&gt; {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (row.length !== headingsLength) {
+<span class="cstat-no" title="statement not covered" >        error = new Error(</span>
+          `Invalid prop \`${propName}\` supplied to` +
+            ` \`${componentName}\`. Validation failed. Headings and rows should match up in ${propName}`,
+        );
+      }
+    });
+  }
+&nbsp;
+  return error || null;
+}
+&nbsp;
+const propTypes = {
+  /**
+   * This is the data provided to the matrix
+   * TODO: Consider validating deeper than this
+   */
+  matrixData: checkMatrixData,
+  /**
+   * Maximum number of cells which should be displayed before pagination
+   */
+  visibleColumns: PropTypes.number,
+  /**
+   * Show 'previous/next' buttons even if they need to be greyed out
+   */
+  alwaysShowPaginationButtons: PropTypes.bool,
+  /**
+   * Click handler for cells
+   */
+  onClickCell: PropTypes.func,
+  /**
+   * Determines whether the component is waiting or not
+   */
+  isLoading: PropTypes.bool,
+  /**
+   * Will take the place of the increment function if set
+   */
+  onNextBatchRequest: PropTypes.func,
+  /**
+   * The text displayed next to the pagination arrows
+   */
+  nextPageText: PropTypes.string,
+};
+&nbsp;
+const defaultProps = {
+  matrixData: {},
+  visibleColumns: 5,
+  alwaysShowPaginationButtons: false,
+  onClickCell: () =&gt; {},
+  isLoading: false,
+  onNextBatchRequest: null,
+  nextPageText: 'NEXT SLOTS',
+};
+&nbsp;
+const cn = bem({ prefix: 'cmc-', block: 'pagination-matrix' });
+&nbsp;
+class PaginationMatrix extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      visibleColumns: this.props.visibleColumns,
+      columnOffset: 0,
+      columnsShouldIncrementBy: this.props.visibleColumns,
+      activeSetting: {
+        rowId: null,
+        columnId: null,
+      },
+    };
+&nbsp;
+    this.handleShouldPageUpdate = this.handlePageUpdate.bind(this);
+    this.handleNextPageClick = this.handleNextPageClick.bind(this);
+    this.handlePrevPageClick = this.handlePrevPageClick.bind(this);
+    this.handleCellClick = this.handleCellClick.bind(this);
+  }
+&nbsp;
+  componentDidUpdate(prevProps) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!this.props.isLoading &amp;&amp; prevProps.matrixData.headings.length !== this.props.matrixData.headings.length) {
+<span class="cstat-no" title="statement not covered" >      this.handlePageUpdate({ desiredDirection: 'next', newHeadings: prevProps.matrixData.headings });</span>
+    }
+  }
+&nbsp;
+  handlePrevPageClick() {
+    this.handlePageUpdate({ desiredDirection: 'prev' });
+  }
+&nbsp;
+  handleNextPageClick() {
+    this.handlePageUpdate({ desiredDirection: 'next' });
+  }
+&nbsp;
+  handlePageUpdate({ desiredDirection, newHeadings }) {
+    const {
+      onNextBatchRequest,
+      matrixData: { headings },
+    } = this.props;
+    const { columnOffset, columnsShouldIncrementBy, visibleColumns } = this.state;
+&nbsp;
+    /**
+     * Based on the direction, we either add or subtract the incrementation number from the offset
+     * This redraws the grid with new positional numbers
+     */
+    const directionalOffset = desiredDirection === 'prev' ? -columnsShouldIncrementBy : columnsShouldIncrementBy;
+    const newOffset = columnOffset + directionalOffset;
+    const newVisibleColumns = visibleColumns + directionalOffset;
+&nbsp;
+    /**
+     * After we've calculated the new positions above, we need check if there is data for those positions
+     * We look to see if there is a heading in the heading array (first check in new prop heading array) for the new position
+     * If there is, we redraw the table with that data
+     * Otherwise we will call onNextBatchRequest to get more data
+     */
+    if ((!isEmpty(newHeadings) &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >newHeadings[newOffset])</span> || headings[newOffset]) {
+      this.setState(() =&gt; ({
+        columnOffset: newOffset,
+        visibleColumns: newVisibleColumns,
+      }));
+    } else {
+      onNextBatchRequest();
+    }
+  }
+&nbsp;
+  handleCellClick(columnIndex, rowIndex) {
+    this.props.onClickCell({ columnIndex, rowIndex });
+&nbsp;
+    this.setState(() =&gt; ({
+      activeSetting: {
+        rowId: rowIndex,
+        columnId: columnIndex,
+      },
+    }));
+  }
+&nbsp;
+  render() {
+    const {
+      matrixData: { headings, rows, sideHeadings },
+      onNextBatchRequest,
+      isLoading,
+      alwaysShowPaginationButtons,
+      nextPageText,
+    } = this.props;
+    const { activeSetting, visibleColumns, columnOffset, columnsShouldIncrementBy } = this.state;
+    // cell size is calculated based on how many cells should be shown
+    const cellWidth = 100 / (this.props.visibleColumns + 1);
+&nbsp;
+    const matrixHeadings = headings &amp;&amp; (
+      &lt;MatrixHeadings
+        headings={headings}
+        columnOffset={columnOffset}
+        visibleColumns={visibleColumns}
+        activeSetting={activeSetting}
+        cellWidth={cellWidth}
+        hasSideHeaders={!isEmpty(sideHeadings)}
+      /&gt;
+    );
+&nbsp;
+    const matrixRows =
+      rows &amp;&amp;
+      rows.map((row, rowIndex) =&gt; (
+        &lt;MatrixRow
+          row={row}
+          sideHeading={!isEmpty(sideHeadings) ? sideHeadings[rowIndex] : undefined}
+          rowIndex={rowIndex}
+          columnOffset={columnOffset}
+          visibleColumns={visibleColumns}
+          activeSetting={activeSetting}
+          cellWidth={cellWidth}
+          handleCellClick={this.handleCellClick}
+          key={`row-${rowIndex}`}
+        /&gt;
+      ));
+&nbsp;
+    // if headings are empty we still need to get a length.
+    // We check the first row because if there are rows, the first one should be populated
+    const incrementCheck = headings ? headings.length : rows &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >rows[0].length;</span>
+    const shouldTableDecrement = visibleColumns - columnsShouldIncrementBy &gt;= this.props.visibleColumns;
+    const shouldTableIncrement = onNextBatchRequest || incrementCheck &gt; visibleColumns; // onNextBatchRequest !== null || incrementCheck &gt; visibleColumns;
+&nbsp;
+    const loading = (
+      &lt;div className={cn('row')}&gt;
+        &lt;Loading height={170} fullScreen={false} relativePosition /&gt;
+      &lt;/div&gt;
+    );
+    const matrix = (
+      &lt;Fragment&gt;
+        &lt;div className={cn('table')}&gt;
+          {!isEmpty(headings) &amp;&amp; matrixHeadings}
+          {matrixRows}
+          &lt;div className={cn('arrow-container')}&gt;
+            {(this.props.alwaysShowPaginationButtons || shouldTableDecrement) &amp;&amp; (
+              &lt;div className={cn('prev-arrow')}&gt;
+                &lt;Button
+                  isSecondary
+                  isShort
+                  buttonWidth='contentFit'
+                  icon='navigate_before'
+                  onClick={this.handlePrevPageClick}
+                /&gt;
+              &lt;/div&gt;
+            )}
+            {(alwaysShowPaginationButtons || shouldTableIncrement || onNextBatchRequest) &amp;&amp; (
+              &lt;div className={cn('next-arrow')}&gt;
+                &lt;Button
+                  isSecondary
+                  isShort
+                  buttonWidth='contentFit'
+                  text={nextPageText}
+                  icon='navigate_next'
+                  iconMode='right'
+                  onClick={this.handleNextPageClick}
+                /&gt;
+              &lt;/div&gt;
+            )}
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/Fragment&gt;
+    );
+&nbsp;
+    return &lt;div className={cn('matrix-grid')}&gt;{isLoading ? <span class="branch-0 cbranch-no" title="branch not covered" >loading </span>: matrix}&lt;/div&gt;;
+  }
+}
+&nbsp;
+PaginationMatrix.propTypes = propTypes;
+PaginationMatrix.defaultProps = defaultProps;
+export default PaginationMatrix;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Aug 09 2019 12:46:35 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>

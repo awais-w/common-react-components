@@ -1,0 +1,28 @@
+{
+  "name": "@cmc/input-selection",
+  "version": "0.5.2",
+  "description": "Generic input component",
+  "main": "dist/input-selection.min.js",
+  "esnext": "esnext/InputSelection.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "cmc-ui"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  }
+}

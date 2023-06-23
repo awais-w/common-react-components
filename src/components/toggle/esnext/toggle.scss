@@ -1,0 +1,62 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-toggle {
+  @include font-standard;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__label {
+    @include font-bold;
+  }
+
+  .toggle__button {
+    outline: none;
+    width: $super-double * 2;
+    padding: 0px;
+    height: $super-double;
+    @include font-bold;
+    background-color: $color-grey-light;
+    display: inline-block;
+    position: relative;
+    border-width: 1px;
+    &.true {
+      border-radius: $half 0 0 $half;
+    }
+    &.false {
+      margin-left: -1px;
+      border-radius: 0 $half $half 0;
+    }
+    .disabled & {
+      border-color: $color-grey-light;
+      color: $color-grey-light;
+    }
+    @include touch-device-bp1024 {
+      height: $input-height-regular;
+    }
+  }
+
+  .trueactive {
+    button {
+      border-color: $primary-color;
+      &.true {
+        background: $primary-color;
+        color: #fff;
+        box-shadow: inset 0 0 $half rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  .falseactive {
+    button {
+      border-color: $color-rust;
+      &.false {
+        background: $color-rust;
+        color: #fff;
+        box-shadow: inset 0 0 $half rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

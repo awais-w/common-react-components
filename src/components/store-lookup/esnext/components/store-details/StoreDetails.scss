@@ -1,0 +1,74 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-store-details {
+  margin: $base;
+  @include font-standard;
+
+  &__line {
+    display: flex;
+    align-items: flex-end;
+    margin-top: $base;
+  }
+
+  &__store-name {
+    margin-right: $base;
+    font-size: $font-size-h3;
+    color: $primary-color;
+    font-weight: normal;
+  }
+
+  &__store-id {
+    margin-right: $base;
+  }
+
+  &__distance {
+    margin-right: $base;
+    color: $color-grey-dark;
+    font-weight: normal;
+  }
+
+  &__address {
+    margin-right: $base;
+    font-size: $font-size-body;
+  }
+
+  &__phone {
+    font-weight: 600;
+    letter-spacing: 0.01em;
+
+    i {
+      position: absolute;
+      margin-top: -1px;
+      font-size: $font-size-body;
+    }
+  }
+
+  &__phone-number {
+    padding-left: $double;
+  }
+
+  &__phone,
+  &__timings-today,
+  &__open-hours,
+  &__toggle-opening-times,
+  &__opening-times-table {
+    margin-right: $base;
+    font-size: $font-size-small;
+  }
+
+  &__open-hours {
+    font-weight: bold;
+  }
+
+  &__toggle-opening-times {
+    cursor: pointer;
+    color: $primary-color;
+    text-decoration: underline;
+  }
+
+  &__opening-times-table {
+    td {
+      padding: $half $half 0 0;
+    }
+  }
+}

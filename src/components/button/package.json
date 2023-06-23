@@ -1,0 +1,33 @@
+{
+  "name": "@cmc/cha-button",
+  "version": "0.8.10",
+  "description": "cmc-cha-asdasd",
+  "main": "dist/CHACallToActionButtonCP.min.js",
+  "esnext": "esnext/CHACallToActionButtonCP.jsx",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "ui-components"
+  ],
+  "author": "CMC",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus3.deveng.systems/repository/argos-npm/"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@argos/bolt": "^1.0.10",
+    "@argos/utils": "^2.1.0",
+    "@cmc/icon-label-value": "^0.6.9"
+  }
+}

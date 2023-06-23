@@ -1,0 +1,110 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  z-index: 9999;
+  .contained {
+    position: absolute;
+  }
+}
+
+.loader-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 12em;
+  height: 12em;
+  &.loader-relative {
+    position: relative;
+  }
+  &:before {
+    position: absolute;
+    border: $double solid $color-grey-light;
+    border-radius: 50%;
+    display: block;
+    content: ' ';
+    top: $base;
+    right: $base;
+    bottom: $base;
+    left: $base;
+  }
+  &.loader-svg-lg {
+    width: $double * 12;
+    height: $double * 12;
+  }
+  &.loader-svg-md {
+    width: $double * 8;
+    height: $double * 8;
+    &:before {
+      border-width: $medium;
+    }
+  }
+  &.loader-svg-sm {
+    width: $double * 6;
+    height: $double * 6;
+    &:before {
+      border-width: $base;
+    }
+  }
+  .loader-text {
+    position: absolute;
+    width: 100%;
+    bottom: -$large;
+    text-align-last: center;
+    @include font-standard;
+  }
+  .circular {
+    animation: rotater 3s linear infinite;
+    transform-origin: center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  .path {
+    stroke-dasharray: 10, 200;
+    stroke-dashoffset: 0;
+    stroke-width: 0.2em;
+    stroke-linecap: round;
+    stroke: $primary-color;
+    animation: dash 3s ease-in-out infinite;
+  }
+}
+
+@keyframes rotater {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotater {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 125, 200;
+    stroke-dashoffset: -124px;
+  }
+}

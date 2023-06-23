@@ -1,0 +1,13 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-credit-card-details {
+  @include font-standard;
+  display: flex;
+  align-items: center;
+  i {
+    padding-right: $half;
+  }
+  span {
+    padding-right: $base;
+  }
+}

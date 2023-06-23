@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> with default props should match default snapshot 1`] = `
+<section
+  className="ac-panel panel panel-collapsed status-delivered"
+>
+  <div
+    className="ac-panel__header panel-heading"
+  >
+    <div
+      className="ac-panel__header-wrapper"
+    >
+      <span
+        className="ac-panel__icon"
+      >
+        <Icon
+          icon="icon-delivered"
+          id="icon-delivered"
+          isCustom={true}
+          onClick={null}
+        />
+      </span>
+      <h3
+        className="ac-panel__title"
+      >
+        <span
+          className="ac-panel__title1 title-item"
+        >
+          Title 1
+        </span>
+        <span
+          className="ac-panel__title2 title-item"
+        >
+          Title 2
+        </span>
+      </h3>
+    </div>
+  </div>
+</section>
+`;

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepperSidebar base tests should match default snapshot 1`] = `
+<TransitionGroup
+  childFactory={[Function]}
+  className="cmc-stepper-container__nav-container"
+  component="div"
+>
+  <a
+    className="cmc-stepper-container__nav-toggle"
+    onClick={[Function]}
+  >
+    Minimize this column 
+    <i
+      className="material-icons"
+    >
+      compare_arrows
+    </i>
+  </a>
+  <span
+    className="cmc-stepper-container__nav-orientation-toggle"
+    onClick={[Function]}
+  >
+    <IconLabelValue
+      color="white"
+      icon="icon-to-left"
+      isCustom={true}
+      isInline={true}
+      tooltipValue="Move this column to left"
+    />
+  </span>
+  <NavBar
+    activeStepIndex={0}
+  >
+    <NavItem
+      allowNavigation={true}
+      currIndex={0}
+      handleClick={[Function]}
+      icon=""
+      isActive={true}
+      isComplete={false}
+      key="navitem-undefined/.0"
+      minimizeNav={false}
+      shortSummary=""
+      subTitle="Stage subtitle"
+      summary=""
+      summaryStyle="after-completion"
+    />
+    <NavItem
+      allowNavigation={true}
+      currIndex={1}
+      handleClick={[Function]}
+      icon=""
+      isActive={false}
+      isComplete={false}
+      key="navitem-undefined/.1"
+      minimizeNav={false}
+      shortSummary=""
+      subTitle={null}
+      summary=""
+      summaryStyle="after-completion"
+    />
+    <NavItem
+      allowNavigation={true}
+      currIndex={2}
+      handleClick={[Function]}
+      icon=""
+      isActive={false}
+      isComplete={false}
+      key="navitem-undefined/.2"
+      minimizeNav={false}
+      shortSummary=""
+      subTitle={null}
+      summary=""
+      summaryStyle="after-completion"
+    />
+  </NavBar>
+</TransitionGroup>
+`;

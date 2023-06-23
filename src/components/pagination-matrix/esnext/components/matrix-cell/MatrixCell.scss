@@ -1,0 +1,55 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+@import '../../Matrix.scss';
+
+.cmc-pagination-matrix__cell {
+  @include setupBorders($cellBorderWidth, $cellBorderRadius, $color-grey-mid);
+  @include verticalCenter;
+  @include font-standard;
+
+  min-width: $minCellWidth;
+  min-height: $minCellHeight;
+  margin: 0 $small;
+  background-color: $color-white;
+  cursor: pointer;
+
+  &:not(.cmc-pagination-matrix__cell--original):not(.cmc-pagination-matrix__cell--active):not(.cmc-pagination-matrix__cell--disabled):hover {
+    @include setupBorders($cellBorderWidth, $cellBorderRadius, $color-blue-cobalt);
+    background: $color-alert-blue;
+  }
+
+  &--active {
+    @include setupBorders($cellBorderWidth, $cellBorderRadius, $color-blue-cobalt);
+    background: $color-blue-cobalt;
+    color: $color-white;
+  }
+
+  &--red {
+    color: $color-rust;
+  }
+
+  &--blue {
+    color: $primary-color;
+  }
+
+  &--disabled {
+    @include disabled;
+  }
+
+  &--original {
+    @include setupBorders($small, $cellBorderRadius, $color-grey-dark);
+    cursor: default;
+    background: $color-grey-light;
+    font-weight: bold;
+  }
+}
+
+.cmc-pagination-matrix__row {
+  [class^='cmc-pagination-matrix'] {
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

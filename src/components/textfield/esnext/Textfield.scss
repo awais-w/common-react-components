@@ -1,0 +1,48 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-textfield {
+  &__label {
+    letter-spacing: 0.04em;
+    color: darken($color-grey-dark, 10%);
+    margin-bottom: $small;
+  }
+  &__input {
+    height: $input-height-regular;
+    &--short {
+      height: $input-height-short;
+      @include touch-device-bp1024 {
+        height: $input-height-regular;
+      }
+    }
+  }
+  &__form-validation {
+    display: flex;
+    align-items: center;
+    .has-right-icon {
+      padding-right: $base * 5;
+    }
+    .cmc-icon,
+    .cmc-icon-custom {
+      margin-left: -$super-double;
+    }
+  }
+  &.has-error {
+    .cmc-textfield {
+      &__input {
+        border-color: $color-rust;
+      }
+      &__help-block {
+        color: $color-rust;
+        margin-top: $small;
+      }
+    }
+  }
+  &.applied {
+    .cmc-textfield {
+      &__input {
+        border-color: $color-green;
+        background-color: $color-alert-teal;
+      }
+    }
+  }
+}

@@ -1,0 +1,1595 @@
+{
+  "tshirt": {
+    "list": [
+      {
+        "partNumber": "tuc132196869",
+        "price": 5,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "L",
+            "shortValue": "L",
+            "order": 2
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132196851",
+        "price": 5,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "M",
+            "shortValue": "M",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132196842",
+        "price": 5,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "S",
+            "shortValue": "S",
+            "order": 0
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132196877",
+        "price": 5,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "XL",
+            "shortValue": "XL",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132196893",
+        "price": 5,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "XXXL",
+            "shortValue": "XXXL",
+            "order": 5
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132196885",
+        "price": 5,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "Black",
+            "shortValue": "Black",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "XXL",
+            "shortValue": "XXL",
+            "order": 4
+          }
+        ]
+      }
+    ],
+    "expected": ["S", "M", "L", "XL", "XXL", "XXXL"]
+  },
+  "jeans": {
+    "list": [
+      {
+        "partNumber": "tuc132132419",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "8R",
+            "shortValue": "8R",
+            "order": 30
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132507",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "14R",
+            "shortValue": "14R",
+            "order": 9
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132638",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "22L",
+            "shortValue": "22L",
+            "order": 22
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132662",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "24L",
+            "shortValue": "24L",
+            "order": 25
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132718",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "16XS",
+            "shortValue": "16XS",
+            "order": 15
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132494",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "14S",
+            "shortValue": "14S",
+            "order": 10
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132591",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "20R",
+            "shortValue": "20R",
+            "order": 20
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132427",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "8L",
+            "shortValue": "8L",
+            "order": 29
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132435",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "10S",
+            "shortValue": "10S",
+            "order": 2
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132566",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "18R",
+            "shortValue": "18R",
+            "order": 17
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132443",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "10R",
+            "shortValue": "10R",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132451",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "10L",
+            "shortValue": "10L",
+            "order": 0
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132486",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "12L",
+            "shortValue": "12L",
+            "order": 4
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132523",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "16S",
+            "shortValue": "16S",
+            "order": 14
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132540",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "16L",
+            "shortValue": "16L",
+            "order": 12
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132558",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "18S",
+            "shortValue": "18S",
+            "order": 18
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132603",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "20L",
+            "shortValue": "20L",
+            "order": 19
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132611",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "22S",
+            "shortValue": "22S",
+            "order": 24
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132620",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "22R",
+            "shortValue": "22R",
+            "order": 23
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132646",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "24S",
+            "shortValue": "24S",
+            "order": 27
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132654",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "24R",
+            "shortValue": "24R",
+            "order": 26
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132689",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "10XS",
+            "shortValue": "10XS",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132697",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "12XS",
+            "shortValue": "12XS",
+            "order": 7
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132401",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "8S",
+            "shortValue": "8S",
+            "order": 31
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132460",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "12S",
+            "shortValue": "12S",
+            "order": 6
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132531",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "16R",
+            "shortValue": "16R",
+            "order": 13
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132700",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "14XS",
+            "shortValue": "14XS",
+            "order": 11
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132515",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "14L",
+            "shortValue": "14L",
+            "order": 8
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132582",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "20S",
+            "shortValue": "20S",
+            "order": 21
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132574",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "18L",
+            "shortValue": "18L",
+            "order": 16
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132726",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "6XS",
+            "shortValue": "6XS",
+            "order": 28
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132671",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "8XS",
+            "shortValue": "8XS",
+            "order": 32
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132132478",
+        "price": 15,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "DK DENIM",
+            "shortValue": "DK DENIM",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "12R",
+            "shortValue": "12R",
+            "order": 5
+          }
+        ]
+      }
+    ],
+    "expected": ["6XS", "8XS", "8S", "8R", "8L", "10XS", "10S", "10R", "10L", "12XS", "12S", "12R", "12L", "14XS", "14S", "14R", "14L", "16XS", "16S", "16R", "16L", "18S", "18R", "18L", "20S", "20R", "20L", "22S", "22R", "22L", "24S", "24R", "24L"]
+  },
+  "vest": {
+    "list": [
+      {
+        "partNumber": "tuc132404752",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "WHITE",
+            "shortValue": "WHITE",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "8",
+            "shortValue": "8",
+            "order": 0
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404761",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "WHITE",
+            "shortValue": "WHITE",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "10",
+            "shortValue": "10",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404779",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "WHITE",
+            "shortValue": "WHITE",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "12",
+            "shortValue": "12",
+            "order": 2
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404787",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "WHITE",
+            "shortValue": "WHITE",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "14",
+            "shortValue": "14",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404795",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "WHITE",
+            "shortValue": "WHITE",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "16",
+            "shortValue": "16",
+            "order": 4
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404808",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "WHITE",
+            "shortValue": "WHITE",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "18",
+            "shortValue": "18",
+            "order": 5
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404816",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "WHITE",
+            "shortValue": "WHITE",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "20",
+            "shortValue": "20",
+            "order": 6
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404824",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "WHITE",
+            "shortValue": "WHITE",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "22",
+            "shortValue": "22",
+            "order": 7
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404832",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "WHITE",
+            "shortValue": "WHITE",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "24",
+            "shortValue": "24",
+            "order": 8
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404429",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "8",
+            "shortValue": "8",
+            "order": 0
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404437",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "10",
+            "shortValue": "10",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404445",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "12",
+            "shortValue": "12",
+            "order": 2
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404453",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "14",
+            "shortValue": "14",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404461",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "16",
+            "shortValue": "16",
+            "order": 4
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404470",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "18",
+            "shortValue": "18",
+            "order": 5
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404488",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "20",
+            "shortValue": "20",
+            "order": 6
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404496",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "22",
+            "shortValue": "22",
+            "order": 7
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404509",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "BLACK",
+            "shortValue": "BLACK",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "24",
+            "shortValue": "24",
+            "order": 8
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404533",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "NAVY",
+            "shortValue": "NAVY",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "8",
+            "shortValue": "8",
+            "order": 0
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404541",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "NAVY",
+            "shortValue": "NAVY",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "10",
+            "shortValue": "10",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404550",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "NAVY",
+            "shortValue": "NAVY",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "12",
+            "shortValue": "12",
+            "order": 2
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404568",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "NAVY",
+            "shortValue": "NAVY",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "14",
+            "shortValue": "14",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404576",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "NAVY",
+            "shortValue": "NAVY",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "16",
+            "shortValue": "16",
+            "order": 4
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404584",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "NAVY",
+            "shortValue": "NAVY",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "18",
+            "shortValue": "18",
+            "order": 5
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404592",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "NAVY",
+            "shortValue": "NAVY",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "20",
+            "shortValue": "20",
+            "order": 6
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404605",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "NAVY",
+            "shortValue": "NAVY",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "22",
+            "shortValue": "22",
+            "order": 7
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404613",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "NAVY",
+            "shortValue": "NAVY",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "24",
+            "shortValue": "24",
+            "order": 8
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404664",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "RED",
+            "shortValue": "RED",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "12",
+            "shortValue": "12",
+            "order": 2
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404672",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "RED",
+            "shortValue": "RED",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "14",
+            "shortValue": "14",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404681",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "RED",
+            "shortValue": "RED",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "16",
+            "shortValue": "16",
+            "order": 4
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404699",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "RED",
+            "shortValue": "RED",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "18",
+            "shortValue": "18",
+            "order": 5
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404701",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "RED",
+            "shortValue": "RED",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "20",
+            "shortValue": "20",
+            "order": 6
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404710",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "RED",
+            "shortValue": "RED",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "22",
+            "shortValue": "22",
+            "order": 7
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404728",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "RED",
+            "shortValue": "RED",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "24",
+            "shortValue": "24",
+            "order": 8
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404648",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "RED",
+            "shortValue": "RED",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "8",
+            "shortValue": "8",
+            "order": 0
+          }
+        ]
+      },
+      {
+        "partNumber": "tuc132404656",
+        "price": 3,
+        "deliveryPrice": 3.95,
+        "freeDelivery": false,
+        "variableDeliveryPrice": false,
+        "attributes": [
+          {
+            "type": "Colour",
+            "value": "RED",
+            "shortValue": "RED",
+            "order": 0
+          },
+          {
+            "type": "Size",
+            "value": "10",
+            "shortValue": "10",
+            "order": 1
+          }
+        ]
+      }
+    ],
+    "expected": {
+      "sizes": ["8", "10", "12", "14", "16", "18", "20", "22", "24"],
+      "colours": ["WHITE", "BLACK", "NAVY", "RED"]
+    }
+  }
+}

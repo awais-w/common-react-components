@@ -1,0 +1,91 @@
+@import '@cmc/common-styles/src/scss/_variables.scss';
+
+.cmc-popover {
+  display: flex;
+  z-index: 9999;
+  filter: drop-shadow(0 0 $half rgba(50, 50, 0, 0.2));
+  position: fixed;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__arrow {
+    width: $medium;
+    height: $double + 2;
+    background: $color-grey-mid;
+    overflow: hidden;
+    position: absolute;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+
+    &:before {
+      content: '';
+      position: absolute;
+      background: $color-white;
+      width: $medium;
+      height: $double;
+      clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    }
+
+    &--bottom {
+      transform: rotate(90deg);
+    }
+
+    &--left {
+      transform: rotate(180deg);
+    }
+
+    &--top {
+      transform: rotate(270deg);
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: $double;
+    border: 1px solid $color-grey-mid;
+    position: absolute;
+    border-radius: $half;
+    padding: $base;
+    background: $color-white;
+    white-space: nowrap;
+    @include font-standard;
+    &--right,
+    &--auto {
+      left: 11px;
+    }
+    &--bottom {
+      top: 14px;
+    }
+    &--left {
+      right: 12px;
+    }
+    &--top {
+      bottom: 14px;
+    }
+  }
+
+  &--right {
+    margin-left: -$base;
+  }
+
+  &--bottom {
+    margin-top: -$base;
+    flex-direction: column;
+  }
+
+  &--left {
+    margin-right: -$base;
+    flex-direction: row-reverse;
+  }
+
+  &--top {
+    margin-top: $base;
+    flex-direction: column-reverse;
+  }
+
+  &--hidden {
+    visibility: hidden;
+  }
+}
